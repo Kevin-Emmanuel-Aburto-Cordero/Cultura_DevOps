@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/icons/icons_leccion/pngegg.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/auth/registro_style.css?v=5.0">
+    <link rel="stylesheet" href="../assets/fonts/font.css?v=1.0">
+    <title>DevOps - Registrarse</title>
+</head>
+<body>
+    <div class="background">
+        <div class="formulario">
+            <div class="titulo">
+                <h1>Cultura<br>DevOps</h1>
+            </div>
+            <div class="texto">
+                <form id="registro" action="register.php" method="post">
+                    <label for="usuario">Usuario</label><br>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario"><br>
+                    <label for="contraseña">Contrseña</label><br>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña"><br>
+                    <label for="nombre_universidad">Universidad</label><br>
+                    <input type="text" id="nombre_universidad" name="nombre_universidad" placeholder="Universidad"><br>
+                    <label for="pais">Pais</label><br>
+                    <input type="text" id="pais" name="pais" placeholder="Pais"><br>
+                    <label for="estado">Estado</label><br>
+                    <input type="text" id="estado" name="estado" placeholder="Estado"><br><br>
+                    <button type="submit" class="boton">Registrarse</button>
+                </form>
+                <div class="login">
+                    <form action="login.html">
+                    <button type="submit" class="boton">Login</button>
+                </form>
+                </div>
+                <div id="mensajeError" style="color: green;"></div>
+                <script src="../assets/js/validar_registro.js?v=2.0"></script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

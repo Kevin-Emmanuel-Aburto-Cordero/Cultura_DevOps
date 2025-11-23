@@ -1,0 +1,273 @@
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, #101916a4, rgba(0, 0, 0)), url(../../img/imagenes_de_fondo/fondo0.jpg);
+    background-position: center;
+}
+/*----------------------------------------------*/
+.titulo{
+    font-size: 2rem;
+}
+.subtitulo{
+    font-size: 1.25rem;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centrado Horizontal */
+    align-items: center;    /* Centrado Vertical (¡Esta es la clave!) */
+    background-image: linear-gradient(to bottom, rgba(1, 112, 145, 0.212), #35524538);
+    height: 70px; /* Altura Fija para que el centrado vertical funcione */
+    width: 250px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+}
+.subtitulo:hover{
+    padding: 10px;
+    animation: parpadeo 3s infinite;
+}
+.texto{
+    font-size: 1.5rem;
+}
+/*----------------------------------------------*/
+header{
+    color: white;
+    padding: 15px;
+    display: flex;
+    background-color: #101916a4;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo h1{
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/*----------------------------------------------*/
+.menu_usuario{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    justify-items: right;
+    left: 77%;
+}
+/*----------------------------------------------*/
+.dropbtn {
+    background-color: rgba(3, 112, 145, 0.212);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+    background-color: rgba(3, 112, 145, 0.212);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 140px;
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 10px;
+  width: 130px;
+  text-decoration: none;
+  display: block;
+  transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(3, 112, 145, 0.212);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 120px;
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  padding: 15px;
+    box-shadow: 
+    inset 0 -1em 1em #2874A6,
+    0 0 0 1px rgb(255, 255, 255),
+    0.3em 0.3em 3em #154360;
+}
+/*----------------------------------------------*/
+.botones{
+    background-color: rgba(3, 112, 145, 0.212);
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    margin: 2px;
+    width: 330px;
+}
+
+.botones:hover{
+    padding: 15px;
+    box-shadow: 
+    inset 0 -1em 1em #2874A6,
+    0 0 0 1px rgb(255, 255, 255),
+    0.3em 0.3em 3em #154360;
+}
+/*----------------------------------------------*/
+.botones-cabecera{
+    background-color: rgba(3, 112, 145, 0.212);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+}
+
+.botones-cabecera:hover{
+    padding: 15px;
+    box-shadow: 
+    inset 0 -1em 1em #2874A6,
+    0 0 0 1px rgb(255, 255, 255),
+    0.3em  0.3em 3em #154360;
+}
+/*----------------------------------------------*/
+.contenedor-abuelo{
+    display: flex;
+    justify-content: center; /* Centrado Horizontal */
+    align-items: center;    /* Centrado Vertical (¡Esta es la clave!) */
+    background-image: linear-gradient(to bottom, rgba(1, 112, 145, 0.212), #35524538);
+    height: 350px; /* Altura Fija para que el centrado vertical funcione */
+    width: 800px;
+    border-radius: 15px;
+    /* Centrar el contenedor abuelo en la página */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+}
+.contenedor-abuelo:hover{
+    padding: 10px;
+    animation: parpadeo 3s infinite;
+}
+
+.contenedor-padre{
+    text-align: center;
+    padding: 2rem;
+    justify-items: center;
+    /* display: inline-block; */
+}
+.contenedor-hijo{
+    text-align: left;
+    padding: 2rem;
+    justify-items: center;
+    /* display: inline-block; */
+}
+/*----------------------------------------------*/
+.caja-perfil{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 255, 255, 0);
+    padding: 4px;
+}
+/*----------------------------------------------*/
+.botones-perfil{
+    display: flex;
+    background-color: rgba(3, 112, 145, 0.212);
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    margin: 2px;
+}
+
+.botones-perfil:hover{
+    padding: 15px;
+    box-shadow: 
+    inset 0 -1em 1em #2874A6,
+    0 0 0 1px rgb(255, 255, 255),
+    0.3em 0.3em 3em #154360;
+}
+/*----------------------------------------------*/
+input{
+    background-color: rgba(1, 92, 99, 0.479);
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #2874a600;
+    text-align: center;
+    color: white;
+    transition-duration: 0.4s;
+    padding: 2px;
+}
+input:hover{
+    padding: 15px;
+}
+input:focus{
+    background-image: linear-gradient(to top, rgba(3,112, 145, 0.212), #35524538);
+    border: 2px solid #36aaf1;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 1.2rem;
+}
+input, textarea{
+    font-size: 1.2rem;
+}
+/*----------------------------------------------*/
+.fecha{
+    width: 330px;
+}
+/*----------------------------------------------*/
+a{
+    text-decoration: none;
+    color: white;
+}

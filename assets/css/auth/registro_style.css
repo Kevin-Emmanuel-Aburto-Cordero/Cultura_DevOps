@@ -1,0 +1,122 @@
+/*--------------------------------------------------------------- */
+body{/*Dedicado para body*/
+    color: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    background-image: linear-gradient(to right, #010201a4, rgba(0, 0, 0)), url(../../img/imagenes_de_fondo/fondo0.jpg);
+}
+
+@media (max-width: 900px){/*Le agrega responsividad al fondo de pantalla*/
+    body{
+    color: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    background-image: linear-gradient(to right, #010201a4, rgba(0, 0, 0)), url(../../img/imagenes_de_fondo/fondo0.jpg);
+    }
+}
+/* --------------------------------------------------------------- */
+.titulo{/*Dedicado al titulo*/
+    font-size: 2rem;
+    text-align: center;
+}
+/* --------------------------------------------------------------- */
+.texto{/*Dedicado al texto en general*/
+    font-size: 1.2rem;
+}
+/* --------------------------------------------------------------- */
+.formulario{/*Dedicado al formulario*/
+    background-image: linear-gradient(to bottom, rgba(3, 112, 145, 0.212), #35524538);
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+}
+
+@keyframes parpadeo{/*Le agrega una animacion que parpadea en fondo del formulario*/
+    0%, 100% {      /*Ciclo de animacion que inicia de 0% a 100%*/
+        box-shadow: 
+            inset 0 -3em 3em #2874A6,
+            0 0 0 2px rgb(255, 255, 255),
+            0.3em 0.3em 1em #154360;
+    }
+    40%{/*Ciclo de oscurecimiento de 40%*/
+        box-shadow: 
+            inset 0 -3em 3em rgba(40, 116, 166, 0.3),
+            0 0 0 2px rgba(255, 255, 255, 0.3),
+            0.3em 0.3em 1em rgba(21, 67, 96, 0.3);
+    }
+}
+
+.formulario:hover{/*Le agrega animacion al formulario*/
+    padding: 25px;
+    animation: parpadeo 3s infinite;
+}
+/* --------------------------------------------------------------- */
+input{/*Dedicaco a los input*/
+    background-color: rgba(1, 92, 99, 0.479);
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #2874a600;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+input:hover{/*Les agrega animacion a los input*/
+    padding: 10px;
+}
+
+input:focus{/*Les agrega un fondo de colores en el momento de escribir*/
+    background-image: linear-gradient(to top, rgba(3, 112, 145, 0.212), #35524538);
+    border: 2px solid #36aaf1;
+}
+
+input::placeholder{/*Le agrega color al texto placeholder*/
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 1rem;
+}
+
+input, textarea{/*Le agrega tamaño de letra al ingresado*/
+    font-size: 1.2rem;
+}
+/* --------------------------------------------------------------- */
+.boton{/*Dedicado a los botones*/
+    background-color: rgba(3, 112, 145, 0.212);
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+    width: 150px;
+}
+
+.boton:hover{/*Le agrega animacion a los botones*/
+  padding: 15px;
+  box-shadow: 
+  inset 0 -1em 1em #2874A6,
+    0 0 0 1px rgb(255, 255, 255),
+    0.3em 0.3em 3em #154360;
+}
+/* --------------------------------------------------------------- */
+.ubicar_texto{
+    text-align: center;
+}
+/* --------------------------------------------------------------- */
+.login{
+    /* position: relative; */
+    position: relative;
+    bottom: 37px;
+    right: -52%;
+}

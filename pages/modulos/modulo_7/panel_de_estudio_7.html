@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/img/icons/icons_leccion/Icon_Commission_Story.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../../assets/css/pages/modulos/modulo_7/panel_de_estudio_7.css?v=1.0">
+    <link rel="stylesheet" href="../../../assets/fonts/font.css?v=1.0">
+    <title>Panel de Estudio 7</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cultura <br> DevOps</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <form action="modulo_7_introduccion.php" method="POST">
+                        <button class="botones" type="submit">Introduccion Modulo 7</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor-bisabuelo">
+        <div class="contenedor-bipadre">
+            <div class="contenedor-bihijo">
+                <div class="panel-de-estudio">
+                    <div class="container">
+                            <div class="columna">
+                                Hola estudiante, antes de realizar el examen te proporcionamos un panel de estudios <br>
+                                en la cual esta basado en los temas vistos durante el modulo 7. Asi que tomate tu <br>
+                                tiempo y estudia, buena suerte!. <br>
+                                <h1 class="titulo">
+                                    Módulo 7: Monitoreo, Observabilidad y Feedback
+                                </h1>
+                                <h4 class="subtitulo">
+                                    1. Distinción Clave y Pilares de Datos (Lecciones 7.1 y 7.2)
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <th>Concepto</th>
+                                        <th>Definición Breve</th>
+                                        <th>Los 3 Pilares (MELT)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Monitoreo</td>
+                                        <td>Práctica de recolectar datos para <br> responder a preguntas conocidas <br> (ej. ¿La CPU supera el 90%?). Se basa <br> en Métricas predefinidas.</td>
+                                        <td>Métricas (Metrics): Valores <br> numéricos (ej. latencia, RPS) para <br> medir tendencias. (La Alerta)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Observabilidad</td>
+                                        <td>Propiedad de un sistema para <br> responder a preguntas <br> desconocidas (ej. ¿Por qué falló esa <br> región?). Se logra con los 3 pilares.</td>
+                                        <td>Logs: Registros de texto/JSON <br> que documentan eventos <br> específicos. (La Causa Raíz)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MTTR</td>
+                                        <td>Tiempo Medio de Resolución. El <br> objetivo principal de la Observabilidad <br> es reducir este tiempo mediante la <br> investigación rápida de la causa raíz.</td>
+                                        <td>Trazas (Traces): Miden el <br> camino completo de una <br> solicitud a través de múltiples <br> microservicios. (El Camino del <br> Fallo)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arquitectura</td>
+                                        <td>Los sistemas de Microservicios y <br> distribuidos hacen que la <br> Observabilidad, y no solo el <br> Monitoreo, sea esencial debido a su <br> alta complejidad.</td>
+                                        <td>Flujo de investigación: Métrica -> Traza -> log</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <h4>
+                                    2. SRE: Medición de Fiabilidad y Objetivos (Lección 7.3)
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <th>Concepto SRE</th>
+                                        <th>Definición y Propósito</th>
+                                        <th>Uso en la Gestión</th>
+                                    </tr>
+                                    <tr>
+                                        <td>SLI (Service Level <br> Indicator)</td>
+                                        <td>Una métrica objetiva y cuantificable que mide <br> la calidad del servicio desde la perspectiva <br> del cliente. Ejemplos: Latencia (tiempo de <br> respuesta) o Disponibilidad (tiempo que está <br> operativo).</td>
+                                        <td>Es la fuente de datos que <br> se mide.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inmutabilidad</td>
+                                        <td>Es la aplicación del principio de Infraestructura <br> Inmutable (Módulo 5.3) al código. El contenedor se <br> promueve sin cambios, eliminando el problema de: <br> "funcionó en mi máquina, pero no en el servidor".</td>
+                                        <td>Riesgo/Consistencia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SLO (Service <br> Level <br> Objective)</td>
+                                        <td>El umbral o la meta interna establecida para <br> los SLIs (ej. "99.9% de disponibilidad"). Es el <br> compromiso de fiabilidad del equipo.</td>
+                                        <td>Es el objetivo que define <br> la tolerancia al fallo.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Margen de <br> Error (Error <br> Budget)</td>
+                                        <td>El tiempo que se permite que el servicio falle <br> sin incumplir el SLO.</td>
+                                        <td>Si se consume, se debe <br> detener el desarrollo de <br> features y priorizar la <br> fiabilidad.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SLA (Service <br> Level <br> Agreement)</td>
+                                        <td>Un contrato legal con el cliente final. Su <br> incumplimiento genera penalizaciones.</td>
+                                        <td>Es la consecuencia legal <br> de no cumplir con el SLO.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alerta <br> Accionable</td>
+                                        <td>Una notificación debe estar vinculada a un <br> SLO y ser precisa para evitar el Alert Fatigue. <br> Debe indicar qué falló, no solo que falló.</td>
+                                        <td>Mecanismo de monitoreo <br> activo.</td>
+                                    </tr>
+                                </table>
+                                <h4>
+                                    3. El Bucle de Feedback y Mejora Continua (Lección 7.4)
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <th>Etapa del <br> Ciclo</th>
+                                        <th>Acción y Propósito</th>
+                                        <th>Métricas <br> Relacionadas</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Quality Gate</td>
+                                        <td>La Observabilidad actúa como un filtro post- <br> despliegue. Si una alerta se dispara inmediatamente <br> por un fallo en el SLO después de la liberación.</td>
+                                        <td>Detección <br> Rápida</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reversión <br> (Roll-back)</td>
+                                        <td>Un fallo crítico detectado por la alerta puede activar un <br> roll-back automatizado en el pipeline de CD, <br> volviendo a la última versión estable.</td>
+                                        <td>MTTD (Tiempo de <br> Detección)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Análisis Post-Mortem</td>
+                                        <td>Proceso formal y sin culpa que ocurre después de un <br> incidente. Utiliza Logs y Trazas para identificar la causa <br> raíz sistémica.</td>
+                                        <td>MTTR (Tiempo de Resolución)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cierre del Bucle</td>
+                                        <td>Los hallazgos del Post-Mortem y los datos de <br> Observabilidad se convierten en requisitos o stories y <br> se añaden al backlog de Desarrollo.</td>
+                                        <td>Mejora Continua</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Principio Sin Culpa</td>
+                                        <td>El enfoque del Post-Mortem debe ser en mejorar los <br> procesos y sistemas y no en culpar a personas <br> individuales.</td>
+                                        <td>Cultura DevOps</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <form action="../../../examenes/examen_modulo_7/examen_modulo_7.php" method="post" onsubmit="return confirm('¿Estas listo para realizar el examen?');">
+                            <button class="botones" type="submit">Ir al examen</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

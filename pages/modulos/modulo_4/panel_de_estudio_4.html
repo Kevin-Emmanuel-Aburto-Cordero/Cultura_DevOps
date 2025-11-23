@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/img/icons/icons_leccion/Icon_Commission_Story.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../../assets/css/pages/modulos/modulo_4/panel_de_estudio_4.css?v=1.0">
+    <link rel="stylesheet" href="../../../assets/fonts/font.css?v=1.0">
+    <title>Panel de Estudio 4</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cultura <br> DevOps</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <form action="modulo_4_introduccion.php" method="POST">
+                        <button class="botones" type="submit">Introduccion Modulo 4</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor-bisabuelo">
+        <div class="contenedor-bipadre">
+            <div class="contenedor-bihijo">
+                <div class="panel-de-estudio">
+                    <div class="container">
+                            <div class="columna">
+                                Hola estudiante, antes de realizar el examen te proporcionamos un panel de estudios <br>
+                                en la cual esta basado en los temas vistos durante el modulo 4. Asi que tomate tu <br>
+                                tiempo y estudia, buena suerte!. <br>
+                                <h1 class="titulo">
+                                    Módulo 4: Entrega Continua (CD)
+                                </h1>
+                                <h4 class="subtitulo">
+                                    1. Definiciones Centrales de CD
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <th>Concepto</th>
+                                        <th>Definición Breve</th>
+                                        <th>Lección Relacionada</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Entrega Continua (CD)</td>
+                                        <td>Extensión de CI que garantiza que el software está siempre listo para ser liberado a producción, con la liberación final como un paso manual.</td>
+                                        <td>4.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Despliegue Continuo (CD)</td>
+                                        <td>Nivel más alto de madurez; el software se despliega a Producción de forma totalmente automática si pasa todas las pruebas.</td>
+                                        <td>4.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artefacto Inmutable</td>
+                                        <td>El paquete binario exacto que se mueve (promueve) sin cambios a través de los entornos (QA, Staging, Prod).</td>
+                                        <td>4.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Idempotencia</td>
+                                        <td>Propiedad de los scripts de despliegue: ejecutarlos múltiples veces siempre produce el mismo estado final del entorno.</td>
+                                        <td>4.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feature Toggles</td>
+                                        <td>Interruptores lógicos en el código que desacoplan el despliegue de la liberación, permitiendo encender o apagar funcionalidades en tiempo real.</td>
+                                        <td>4.4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Roll-back Instantáneo</td>
+                                        <td>Capacidad de volver a la versión estable anterior en segundos, posible gracias a estrategias como Azul/Verde o Feature Toggles.</td>
+                                        <td>5.5</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <h3>
+                                    2. Flujo del Pipeline y Objetivos por Etapa
+                                </h3>
+                                Este diagrama visualiza cómo los conceptos del CD extienden la CI para gestionar la entrega y liberación.
+                                <table>
+                                    <tr>
+                                        <th>Lección</th>
+                                        <th>Etapa del Pipeline</th>
+                                        <th>Objetivo Principal (El Por Qué)</th>
+                                        <th>Estrategia/Herramienta Clave</th>
+                                    </tr>
+                                    <tr>
+                                        <td>4.1 CD vs. CD</td>
+                                        <td>Decisión Final</td>
+                                        <td>Definir el nivel de automatización: manual (CD) o automático (CD).</td>
+                                        <td>Pausa Manual / Confianza Operacional.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.2 Promoción</td>
+                                        <td>Despliegue Secuencial</td>
+                                        <td>Asegurar la consistencia del entorno (IaC) y la Inmutabilidad del Artefacto.</td>
+                                        <td>Entorno Staging (Réplica de Prod), Idempotencia.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.3 Pruebas Alto Nivel</td>
+                                        <td>Validación No Funcional</td>
+                                        <td>Garantizar la estabilidad y escalabilidad del sistema bajo carga real.</td>
+                                        <td>Pruebas de Carga/Estrés, Pruebas E2E (Sistema).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.4 Feature Toggles</td>
+                                        <td>Gestión de la Liberación</td>
+                                        <td>Desacoplar el Despliegue del Release y permitir la reversión de features sin roll-back de código.</td>
+                                        <td>TBD, Liberaciones Canary Controladas.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.5 Estrategias Riesgo</td>
+                                        <td>Despliegue a Producción</td>
+                                        <td>Minimizar el impacto de un fallo y garantizar una reversión casi instantánea.</td>
+                                        <td>Despliegue Azul/Verde, Despliegue Canary.</td>
+                                    </tr>
+                                </table>
+                                <h3>
+                                    3. Técnicas Operacionales y Mitigación de Riesgos
+                                </h3>
+                                Esta tabla resume las técnicas clave para gestionar la liberación y el riesgo en Producción.
+                                <table>
+                                    <tr>
+                                        <th>Técnica Avanzada</th>
+                                        <th>Mecanismo de Funcionamiento</th>
+                                        <th>Beneficio Directo en la Práctica</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Azul/Verde</td>
+                                        <td>Dos entornos idénticos (Viejo/Nuevo). El tráfico se cambia del Azul al Verde de una sola vez mediante un Load Balancer.</td>
+                                        <td>La reversión es instantánea (se conmuta el tráfico de vuelta al entorno antiguo), eliminando el downtime.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Canary Deployment</td>
+                                        <td>La nueva versión recibe inicialmente solo una fracción pequeña del tráfico (ej. 5%).</td>
+                                        <td>Permite la detección temprana y gradual de fallos, conteniendo el impacto solo a un grupo mínimo de usuarios.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feature Toggles</td>
+                                        <td>Un switch de código que permite desplegar la feature oculta y activarla remotamente.</td>
+                                        <td>Reversión de Feature en Segundos (solo se apaga el toggle) sin necesidad de ejecutar el roll-back de todo el artefacto.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Staging Paritario</td>
+                                        <td>Entorno construido usando las mismas scripts de IaC que Producción.</td>
+                                        <td>Evita el fallo de último minuto causado por desviación de configuración (Configuration Drift).</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <form action="../../../examenes/examen_modulo_4/examen_modulo_4.php" method="post" onsubmit="return confirm('¿Estas listo para realizar el examen?');">
+                            <button class="botones" type="submit">Ir al examen</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

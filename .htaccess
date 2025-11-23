@@ -1,0 +1,2 @@
+RewriteEngine On
+Redirect /prueba-htaccess https://www.google.com

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/icons/icons_leccion/pngegg.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/pages/recuperar_contraseña.css?v=2.0">
+    <link rel="stylesheet" href="../assets/fonts/font.css?v=1.0">
+    <title>DevOps - Recuperar Contraseña</title>
+</head>
+<body>
+    <div class="background">
+        <div class="formulario">
+            <div class="titulo">
+                <h1>Cultura<br>DevOps</h1>
+            </div>
+            <div class="texto">
+            <form id="recuperar_contraseña" action="scripts/recuperar_contraseña.php" method="post">
+                <label for="usuario">Usuario</label><br>
+                <input type="text" id="usuario" name="usuario" placeholder="Usuario"><br>
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Contraseña"><br>
+                <label for="Confirmar contraseña">Confirmar contraseña</label>
+                <input type="password" id="password2" name="password2" placeholder="Confirmar contraseña"><br>
+                <div class="ubicar_texto">
+                    <a href="../auth/login.html">Inicia Sesion aqui</a><br>
+                </div>
+                <button type="submit">Cambiar Contraseña</button>
+            </form>
+            <div class="ubicar_texto">
+                ¿No tienes cuenta? <a href="../auth/login.html">Resgistrate</a>
+            </div>
+            <div id="mensajeError" style="color: white;"></div>
+            <script src="../assets/js/validar_cambio_contraseña.js?v=1.0"></script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

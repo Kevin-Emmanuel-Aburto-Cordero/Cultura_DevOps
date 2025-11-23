@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/img/icons/icons_leccion/Icon_Commission_Story.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../../assets/css/pages/modulos/modulo_8/panel_de_estudio_8.css?v=1.0">
+    <link rel="stylesheet" href="../../../assets/fonts/font.css?v=1.0">
+    <title>Panel de Estudio 8</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cultura <br> DevOps</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <form action="modulo_8_introduccion.php" method="POST">
+                        <button class="botones" type="submit">Introduccion Modulo 8</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor-bisabuelo">
+        <div class="contenedor-bipadre">
+            <div class="contenedor-bihijo">
+                <div class="panel-de-estudio">
+                    <div class="container">
+                            <div class="columna">
+                                Hola estudiante, antes de realizar el examen te proporcionamos un panel de estudios <br>
+                                en la cual esta basado en los temas vistos durante el modulo 8. Asi que tomate tu <br>
+                                tiempo y estudia, buena suerte!. <br>
+                                <h1 class="titulo">
+                                    Módulo 8: DevSecOps y Gorbernanza
+                                </h1>
+                                <h4 class="subtitulo">
+                                    1. DevSecOps y el Principio Shift-Left
+                                </h4>
+                                <ul>
+                                    <li>Definición: DevSecOps es la integración de la Seguridad de manera continua y <br> automatizada en todas las fases del pipeline.</li>
+                                    <li>Pilar Central: Shift-Left (Mover a la Izquierda).
+                                        <ul>
+                                            <li>Significado: Aplicar controles de seguridad lo más pronto posible (en la fase <br> de código) para detectar y corregir vulnerabilidades cuando son más baratas <br> y fáciles de arreglar.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Cultura: La seguridad es una responsabilidad compartida por los equipos <br> de Desarrollo, Operaciones y Seguridad, eliminando el rol de 'Gatekeeper' (cuello de <br> botella) de último minuto.</li>
+                                </ul>
+                                <br>
+                                <h4>
+                                    2. Pruebas de Seguridad Automatizadas (Quality Gates)
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <th>Tipo de Prueba</th>
+                                        <th>Acrónimo</th>
+                                        <th>Función</th>
+                                        <th>Detección de</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Estática</td>
+                                        <td>SAST</td>
+                                        <td>Analiza el Código Fuente <br> (estático) sin ejecutar la <br> aplicación.</td>
+                                        <td>SQL Injection, XSS <br> (vulnerabilidades de <br> codificación).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dinámica</td>
+                                        <td>DAST</td>
+                                        <td>Analiza la aplicación en un <br> Entorno en Ejecución <br> (dinámico), simulando ataques <br> externos.</td>
+                                        <td>Vulnerabilidades <br> manifiestas en tiempo de <br> ejecución.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dependencias</td>
+                                        <td>-</td>
+                                        <td>Revisa bibliotecas de terceros y <br> paquetes de código abierto.</td>
+                                        <td>Vulnerabilidades <br> conocidas (CVEs) en <br> componentes externos.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Contenedores</td>
+                                        <td>-</td>
+                                        <td>Escanea las Imágenes de <br> Contenedores (Docker) antes <br> del despliegue.</td>
+                                        <td>Software desactualizado en <br> capas de la imagen.</td>
+                                    </tr>
+                                </table>
+                                <h4>
+                                    3. Gobernanza, Conformidad y Permisos
+                                </h4>
+                                <ul>
+                                    <li>Gobernanza: Asegura el cumplimiento de políticas internas y Conformidad con <br> regulaciones externas (ej. GDPR).</li>
+                                    <li>GaaC: Gobernanza como Código. Definir las reglas, políticas y configuraciones <br> de seguridad en un código versionado para su aplicación consistente.</li>
+                                    <li>RBAC: Control de Acceso Basado en Roles. Mecanismo para limitar los permisos <br> (acciones) que un usuario o servicio puede realizar en un sistema (ej. Kubernetes).</li>
+                                    <li>Separación de Tareas: Política que exige que la persona que escribe el código no <br> sea la misma que lo aprueba para producción.</li>
+                                    <li>Auditoría: La automatización genera un rastro de auditoría y trazabilidad <br> completo de cada cambio, esencial para el cumplimiento regulatorio.</li>
+                                </ul>
+                                <h4>
+                                    4. Gestión de Secretos y Hardening
+                                </h4>
+                                <ul>
+                                    <li>Secretos: Información sensible (claves API, contraseñas de DB, tokens) que <br> nunca debe estar en texto plano en Git o imágenes de contenedores.</li>
+                                    <li>Solución: Uso de Sistemas de Gestión de Secretos (ej. HashiCorp Vault) para <br> inyectar credenciales de forma segura solo en tiempo de ejecución.</li>
+                                    <li>Mínimo Privilegio: Principio de seguridad que da a cada componente solo los <br> permisos mínimos requeridos, limitando el daño si es comprometido.</li>
+                                    <li>Hardening: Endurecimiento de entornos. Ejemplos:
+                                        <ul>
+                                            <li>Construir imágenes de contenedores con el mínimo número de paquetes.</li>
+                                            <li>Ejecutar contenedores con usuarios no root.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Bucle de Feedback de Seguridad: Las alertas críticas activan el plan de <br> Respuesta a Incidentes de Seguridad (ej. roll-back forzado o aislamiento), y los <br> resultados del Post-Mortem se convierten en requisitos para el backlog de <br> Desarrollo.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <form action="../../../examenes/examen_modulo_8/examen_modulo_8.php" method="post" onsubmit="return confirm('¿Estas listo para realizar el examen?');">
+                            <button class="botones" type="submit">Ir al examen</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

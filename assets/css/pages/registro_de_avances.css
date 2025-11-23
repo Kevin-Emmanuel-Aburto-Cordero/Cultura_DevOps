@@ -1,0 +1,291 @@
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+/*----------------------------------------------*/
+.fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cubre toda la pantalla */
+  z-index: -1; /* se queda detrás del contenido */
+}
+/*----------------------------------------------*/
+.titulo{
+    font-size: 2rem;
+    text-align: center;
+
+    display: flex;
+    justify-content: center; /* Centrado Horizontal */
+    align-items: center;    /* Centrado Vertical (¡Esta es la clave!) */
+    background-image: linear-gradient(to bottom, rgba(1, 111, 145, 0.548), #35524538);
+    height: 70px; /* Altura Fija para que el centrado vertical funcione */
+    width: 400px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+}
+.subtitulo{
+    font-size: 1.25rem;
+    text-align: center;
+}
+.texto{
+    font-size: 1.5rem;
+
+    display: flex;
+    justify-content: center; /* Centrado Horizontal */
+    align-items: center;    /* Centrado Vertical (¡Esta es la clave!) */
+    background-image: linear-gradient(to bottom, rgba(1, 111, 145, 0.548), #35524538);
+    height: 70px; /* Altura Fija para que el centrado vertical funcione */
+    width: 400px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+}
+/*----------------------------------------------*/
+header{
+    color: white;
+    padding: 15px;
+    display: flex;
+    background-color: #101916b7;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo h1{
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/*----------------------------------------------*/
+.menu_usuario{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    justify-items: right;
+    left: 77%;
+}
+/*----------------------------------------------*/
+.dropbtn {
+    background-color: rgba(3, 112, 145, 0.212);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+    background-color: rgba(3, 112, 145, 0.212);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 140px;
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 10px;
+  width: 130px;
+  text-decoration: none;
+  display: block;
+  transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(3, 112, 145, 0.212);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 120px;
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  padding: 15px;
+    box-shadow: 
+    inset 0 -1em 1em #2874A6,
+    0 0 0 1px rgb(255, 255, 255),
+    0.3em 0.3em 3em #154360;
+}
+/*----------------------------------------------*/
+
+/*----------------------------------------------*/
+.botones{
+    background-color: rgba(3, 112, 145, 0.212);
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+    margin: 2px;
+}
+
+.botones:hover{
+    padding: 15px;
+    box-shadow: 
+    inset 0 -1em 1em #2874A6,
+    0 0 0 1px white,
+    0.3em 0.3em 3em #154360;
+}
+/*----------------------------------------------*/
+.botones-cabecera{
+    background-color: rgba(3, 112, 145, 0.212);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+}
+
+.botones-cabecera:hover{
+    padding: 15px;
+    box-shadow: 
+    inset 0 -1em 1em #2874A6,
+    0 0 0 1px white,
+    0.3em 0.3em 3em #154360;
+}
+/*----------------------------------------------*/
+.modulos{
+    justify-content: left;
+    width: 100%;
+}
+
+.submodulo1{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.submodulo2{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.submodulo3{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+/*----------------------------------------------*/
+.modulo1{
+    padding: 1rem;
+    width: 380px;
+    height: 150px;
+    background-color:  rgba(3, 112, 145, 0.685);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.modulo2{
+    padding: 1rem;
+    width: 380px;
+    height: 150px;
+    background-color: rgba(145, 3, 3, 0.685);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.modulo3{
+    padding: 1rem;
+    width: 380px;
+    height: 150px;
+    background-color: rgba(129, 3, 145, 0.685);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.modulo4{
+    padding: 1rem;
+    width: 380px;
+    height: 150px;
+    background-color: rgba(3, 145, 22, 0.685);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.modulo5{
+    padding: 1rem;
+    width: 380px;
+    height: 150px;
+    background-color: #047e6ab6;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.modulo6{
+    padding: 1rem;
+    width: 380px;
+    height: 150px;
+    background-color: #802b00c7;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.modulo7{
+    padding: 1rem;
+    width: 380px;
+    height: 150px;
+    background-color: #090364c5;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.modulo8{
+    padding: 1rem;
+    width: 380px;
+    height: 150px;
+    background-color: #666666cb;
+    border-radius: 15px;
+    margin: 20px;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/img/icons/icons_leccion/Icon_Commission_Story.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../../assets/css/pages/modulos/modulo_6/panel_de_estudio_6.css?v=1.0">
+    <link rel="stylesheet" href="../../../assets/fonts/font.css?v=1.0">
+    <title>Panel de Estudio 6</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cultura <br> DevOps</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <form action="modulo_6_introduccion.php" method="POST">
+                        <button class="botones" type="submit">Introduccion Modulo 6</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor-bisabuelo">
+        <div class="contenedor-bipadre">
+            <div class="contenedor-bihijo">
+                <div class="panel-de-estudio">
+                    <div class="container">
+                            <div class="columna">
+                                Hola estudiante, antes de realizar el examen te proporcionamos un panel de estudios <br>
+                                en la cual esta basado en los temas vistos durante el modulo 6. Asi que tomate tu <br>
+                                tiempo y estudia, buena suerte!. <br>
+                                <h1 class="titulo">
+                                    Módulo 6: Contenedores y Orquestación
+                                </h1>
+                                <h4 class="subtitulo">
+                                    1. Definiciones Centrales
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <th>Concepto</th>
+                                        <th>Definición Breve</th>
+                                        <th>Lección Relacionada</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Contenedor</td>
+                                        <td>Un paquete ligero, ejecutable e inmutable que incluye todo para <br> correr una aplicación (código, runtime, dependencias).</td>
+                                        <td>6.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Orquestación</td>
+                                        <td>El proceso de automatizar el despliegue, gestión, escalabilidad y <br> red de múltiples contenedores en un entorno de producción.</td>
+                                        <td>6.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Docker</td>
+                                        <td>La plataforma de código abierto más popular para crear y <br> ejecutar contenedores.</td>
+                                        <td>6.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kubernetes (K8s)</td>
+                                        <td>El sistema de código abierto líder mundial para la Orquestación <br> Declarativa de contenedores.</td>
+                                        <td>6.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Imagen de Contenedor</td>
+                                        <td>La plantilla de solo lectura que se crea a partir del Dockerfile y <br> que se almacena en el Registro.</td>
+                                        <td>6.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pod</td>
+                                        <td>La unidad de despliegue más pequeña en Kubernetes. Agrupa <br> uno o más contenedores que comparten recursos de red.</td>
+                                        <td>6.3</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <h4>
+                                    2. Contenedores: La Unidad Inmutable de Despliegue
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <th>Característica</th>
+                                        <th>Descripción Clave</th>
+                                        <th>Relación con Módulos <br> Anteriores</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Diferencia con VM</td>
+                                        <td>El contenedor es más ligero y arranca más rápido porque <br> comparte el núcleo (kernel) del sistema operativo <br> anfitrión, a diferencia de la VM que emula hardware y <br> necesita su propio SO invitado.</td>
+                                        <td>Eficiencia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inmutabilidad</td>
+                                        <td>Es la aplicación del principio de Infraestructura <br> Inmutable (Módulo 5.3) al código. El contenedor se <br> promueve sin cambios, eliminando el problema de: <br> "funcionó en mi máquina, pero no en el servidor".</td>
+                                        <td>Riesgo/Consistencia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dockerfile</td>
+                                        <td>El archivo de texto que contiene las instrucciones <br> paso a paso para construir una imagen. Cada instrucción <br> crea una capa.</td>
+                                        <td>IaC (Imperativo)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Registro <br> (Registry)</td>
+                                        <td>El repositorio centralizado (ej. Docker Hub, AWS ECR) <br> donde se almacena la Imagen etiquetada y versionada <br> después de la fase de CI.</td>
+                                        <td>Artefacto CI/CD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Proceso CI/CD</td>
+                                        <td>Se ejecuta docker build (crea la imagen) y luego docker <br> push (la sube al Registro) después de pasar las <br> pruebas.</td>
+                                        <td>Automatización</td>
+                                    </tr>
+                                </table>
+                                <h4>
+                                    3. Orquestación con Kubernetes (K8s)
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <th>Concepto de <br> K8s</th>
+                                        <th>Función Principal</th>
+                                        <th>Modelo de <br> Aprovisionamiento</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Orquestador</td>
+                                        <td>Automatiza la auto-sanación, el escalado (agregar o quitar <br> réplicas de Pods) y la gestión del ciclo de vida de las <br> aplicaciones.</td>
+                                        <td>Declarativo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bucle de <br> Control</td>
+                                        <td>El corazón declarativo de K8s. Compara constantemente el <br> estado deseado (definido en YAML) con el estado actual y <br> realiza acciones correctivas.</td>
+                                        <td>Idempotencia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deployment</td>
+                                        <td>Objeto de K8s que define cuántas réplicas de un Pod deben <br> estar corriendo. Permite las Actualizaciones Rotativas <br> (Rolling Updates).</td>
+                                        <td>Estrategia CD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aislamiento Lógico</td>
+                                        <td>El Namespace es la partición virtual dentro del clúster que <br> permite que múltiples equipos o entornos (Dev/Staging/Prod) <br> compartan el hardware sin conflictos de nombres o permisos.</td>
+                                        <td>Permisos/Seguridad</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Flujo de IaC</td>
+                                        <td>Terraform se usa para crear el Clúster (infraestructura <br> subyacente), mientras que los manifiestos YAML de K8s se <br> usan para gestionar las aplicaciones (dentro del clúster).</td>
+                                        <td>Interoperabilidad <br> (Módulo 5.4)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <form action="../../../examenes/examen_modulo_6/examen_modulo_6.php" method="post" onsubmit="return confirm('¿Estas listo para realizar el examen?');">
+                            <button class="botones" type="submit">Ir al examen</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

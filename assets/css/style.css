@@ -1,0 +1,180 @@
+/* ---------------------------------------------------------- */
+body{/*Dedicado para body*/
+  color: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, #101916a4, rgba(0, 0, 0)), url('../img/imagenes_de_fondo/fondo0.jpg');
+  background-position: center;
+}
+/* ---------------------------------------------------------- */
+.titulo{/*Dedicado para titulo*/
+  background-image: linear-gradient(to bottom, rgba(3, 112, 145, 0.212), #35524538);
+  padding: 2px;
+  width: 230px;
+  margin: 0 auto;
+  margin-top: 18%;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  transition-duration: 0.4s;
+  box-shadow: 0.3s ease-in-out;
+}
+
+.titulo:hover{/*le agrega una animacion a titulo*/
+  padding: 20px;
+  box-shadow: 
+  inset 0 -3em 3em #2874A6,
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em #154360;
+}
+/* ---------------------------------------------------------- */
+.subtitulo{/*Dedicado al subtitulos*/
+  font-size: 1.25rem;
+}
+/* ---------------------------------------------------------- */
+.contenedor-1{/*Decicado al contenedor-1*/
+  background-image: linear-gradient(to bottom, rgba(3, 112, 145, 0.212), #35524538);
+  padding: 2px;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition-duration: 0.4s;
+  box-shadow: 0.3s ease-in-out;
+}
+
+.contenedor-1:hover{/*le agrega animacion a contenedor-1*/
+  padding: 20px;
+  box-shadow: 
+  inset 0 -3em 3em #2874A6,
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em #154360;
+}
+/* ---------------------------------------------------------- */
+.contenedor{/*Dedicado al contenedor*/
+  background-image: linear-gradient(to bottom, rgba(3, 112, 145, 0.212), #35524538);
+  padding: 1px;
+  width: 55%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 500px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  transition-duration: 0.4s;
+  box-shadow: 0.3s ease-in-out;
+}
+
+.contenedor:hover{/*le agrega animacion a contenedor*/
+  padding: 20px;
+  box-shadow: 
+  inset 0 -3em 3em #2874A6,
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em #154360;
+}
+/* ---------------------------------------------------------- */
+.texto1{
+  flex: 1;
+}
+/* ---------------------------------------------------------- */
+.texto{/*dedicado a los textos*/
+  font-size: 1.2rem;
+}
+/* ---------------------------------------------------------- */
+.imagen_devops{/*Dedicado a la imagen DevOps*/
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  position: relative;
+  /* display: inline-block; */
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.imagen_devops_titulo{/*Dedicado a la descripcion de la imagen DevOps*/
+  visibility: hidden;
+  background-image: linear-gradient(to left, #101916a4, #35524538);
+  border: 2px solid #355245;
+  color: white;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -17%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 0;
+  transform: translateX(-50%) translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.imagen_devops:hover .imagen_devops_titulo{/*Hace aparecer la descripcion de la imagen DevOps*/
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {/*le agrega responsividad a la imagen DevOps*/
+  .contenedor{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .imagen_devops{/*Reubica la imagen DevOps*/
+    width: 100%;
+    max-width: 300px;
+  }
+}
+/* ---------------------------------------------------------- */
+.botones{/*Dedicado al diseño de los botones*/
+  background-color: rgba(3, 112, 145, 0.212);
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  box-shadow: 0.3s ease-in-out;
+}
+
+.botones:hover{/*Le agrega animacion a los botones*/
+  padding: 15px;
+  box-shadow: 
+  inset 0 -1em 1em #2874A6,
+    0 0 0 1px rgb(255, 255, 255),
+    0.3em 0.3em 3em #154360;
+}
+
+.botones_cabecera{/*le da ubicacion a los botones del inicio de la pagina*/
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 400px){/*le agrega responcividad a los botones del inicio de la pagina*/
+  .botones_cabecera {
+    right: 10px;
+    top: 10px;
+    gap: 6px;
+  }
+
+  .botones_cabecera button {/*Reubica los botones del inicio de la pagina*/
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+.boton_final{/*Ubica al centro el boton inferior*/
+  text-align: center;
+}
+/* ---------------------------------------------------------- */

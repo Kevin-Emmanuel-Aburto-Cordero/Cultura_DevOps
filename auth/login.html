@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/icons/icons_leccion/pngegg.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/auth/login_style.css?v=5.0">
+    <link rel="stylesheet" href="../assets/fonts/font.css">
+    <title>DevOps - Login</title>
+</head>
+<body>
+    <div class="background">
+        <div class="formulario">
+            <div class="titulo">
+                <h1>Cultura<br>DevOps</h1>
+            </div>
+        <div class="texto">
+            <form id="iniciar_sesion" action="login.php" method="post">
+                <label for="usuario">Usuario</label><br>
+                <input type="text" id="usuario" name="usuario" placeholder="Usuario"><br>
+                <label for="contraseña">Contraseña</label><br>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña"><br>
+                <div class="ubicar_texto">
+                    <a href="../pages/recupera_contraseña.html">Recuperar contraseña</a><br>
+                </div>
+                <button type="submit" class="boton">Iniciar Sesion</button>
+            </form>
+            <div class="ubicar_texto">
+                ¿No tienes cuenta? <a href="register.html">Registrarse</a>
+            </div>
+            <div id="mensajeError" style="color: wheat;"></div>
+            <script src="../assets/js/validar_login.js?v=1.0"></script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

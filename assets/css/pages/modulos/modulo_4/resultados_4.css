@@ -1,0 +1,88 @@
+body{
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cubre toda la pantalla */
+  z-index: -1; /* se queda detrás del contenido */
+}
+
+/*--------------------------------------*/
+.titulo{
+    font-size: 2rem;
+}
+.subtitulo{
+    font-size: 1.25rem;
+}
+.texto{
+    font-size: 1.5rem;
+}
+.info_modulo{
+    font-size: 1rem;
+}
+/*--------------------------------------*/
+.contenedor-bisabuelo{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* centra verticalmente el contenido */
+    width: 100%;
+    height: 100vh; /* ✅ ocupa toda la altura visible de la pantalla */
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover; /* ✅ se ajusta al tamaño de pantalla */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contenedor-bipadre{
+    display: flex;
+    padding: 0rem;
+    justify-content: center;
+}
+.contenedor-bihijo{
+    text-align: left;
+    padding: 1rem;
+    justify-items: center;
+}
+/*------------------------------------------*/
+.botones{
+    background-color: rgba(3, 145, 22, 0.212);
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+    margin: 2px;
+}
+
+.botones:hover{
+    padding: 15px;
+    box-shadow: 
+    inset 0 -1em 1em rgba(16, 177, 37, 0.692),
+    0 0 0 2px  white,
+    0.3em 0.3em 3em rgb(14, 70, 22);
+}
+/*--------------------------------------------*/
+.datos_unidad{
+    padding: 10px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(3, 145, 22, 0.212);
+    text-align: left;
+    transition-duration: 0.4s;  
+}
+.datos_unidad:hover{
+    padding: 15px;
+    box-shadow: 
+    inset 0 -1em 1em rgba(16, 177, 37, 0.692),
+    0 0 0 2px  white,
+    0.3em 0.3em 3em rgb(14, 70, 22);
+}
+/*----------------------*/

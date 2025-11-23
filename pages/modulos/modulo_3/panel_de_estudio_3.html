@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/img/icons/icons_leccion/Icon_Commission_Story.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../../assets/css/pages/modulos/modulo_3/panel_de_estudio_3.css?v=1.0">
+    <link rel="stylesheet" href="../../../assets/fonts/font.css?v=1.0">
+    <title>Panel de Estudio 3</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cultura <br> DevOps</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <form action="modulo_3_introduccion.php" method="POST">
+                        <button class="botones" type="submit">Introduccion Modulo 3</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor-bisabuelo">
+        <div class="contenedor-bipadre">
+            <div class="contenedor-bihijo">
+                <div class="panel-de-estudio">
+                    <div class="container">
+                            <div class="columna">
+                                Hola estudiante, antes de realizar el examen te proporcionamos un panel de estudios <br>
+                                en la cual esta basado en los temas vistos durante el modulo 3. Asi que tomate tu <br>
+                                tiempo y estudia, buena suerte!. <br>
+                                <h1 class="titulo">
+                                    Módulo 3: Integración Continua (CI)
+                                </h1>
+                                <h4 class="subtitulo">
+                                    Concepto general
+                                </h4>
+                                La Integración Continua (CI) es la disciplina de DevOps que se enfoca en automatizar la <br>
+                                validación y compilación del código a lo largo de todo el ciclo de desarrollo. Consiste en <br>
+                                un pipeline automatizado que se activa con cada cambio de código (commit), ejecutando pruebas <br>
+                                y análisis estático. El propósito principal es detectar defectos y conflictos lo más rápido y <br>
+                                temprano posible (Shift Left), asegurando que la rama principal de código sea siempre estable, <br>
+                                funcional y esté lista para ser desplegada. 
+                                <br>
+                                <br>
+                                <img class="imagen" src="../../../assets/img/modulo_3/ci.jpg" alt="CI">
+                                <h4 class="subtitulo">
+                                    Importancia
+                                </h4>
+                                <ul>
+                                    <li>Minimiza el Costo de Corrección: Encontrar un defecto en minutos (durante la CI) es exponencialmente <br>
+                                        más barato que encontrarlo en días o semanas.</li>
+                                    <li>Previene la Regresión: Las pruebas automatizadas actúan como un "Quality Gate" (Puerta de Calidad) que <br>
+                                        prohíbe el paso del código que rompe las funcionalidades existentes.</li>
+                                    <li>Asegura la Reproducibilidad: Garantiza que el software se compile de manera consistente en un entorno <br>
+                                        limpio, resolviendo el problema del "funciona en mi máquina".</li>
+                                    <li>Habilita la Entrega Continua (CD): Una rama principal estable ("verde") es el requisito fundamental para <br>
+                                        poder automatizar el despliegue a producción.</li>
+                                </ul>
+                                <img class="imagen_0" src="../../../assets/img/modulo_3/CI.png" alt="CI">
+                                <h4 class="subtitulo">
+                                    Conceptos clave
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <th>Concepto</th>
+                                        <th>Definición</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Commit Frecuente</td>
+                                        <td>La disciplina cultural de fusionar cambios pequeños y <br>
+                                            constantes a la rama principal (varias veces al día).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Servidor CI</td>
+                                        <td>La herramienta automatizada (ej. Jenkins, GitLab CI) <br>
+                                            que monitorea el repositorio y ejecuta el pipeline.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shift Left</td>
+                                        <td>La práctica de mover las pruebas y los chequeos de <br>
+                                            seguridad al inicio del ciclo de desarrollo.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pruebas Unitarias</td>
+                                        <td>La prueba más rápida y de más bajo nivel que se ejecuta <br>
+                                            en CI para validar la lógica individual de componentes.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td>Artefacto Inmutable</td>
+                                        <td>El paquete binario (ejecutable) generado por el build <br>
+                                            que no debe ser modificado en ningún entorno posterior.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feedback Rápido</td>
+                                        <td>La notificación casi instantánea al equipo sobre el <br>
+                                            estado (rojo/verde) del build.</td>
+                                    </tr>
+                                </table>
+                                <h4 class="subtitulo">
+                                    Ejemplo práctico: Flujo de la Falla ("Rojo")
+                                </h4>
+                                <ol>
+                                    <li>Desarrollador A: Hace un commit que, accidentalmente, tiene un error de sintaxis.</li>
+                                    <li>Servidor CI: Detecta el push y comienza el build.</li>
+                                    <li>Fase de Compilación: La compilación falla.</li>
+                                    <li>Feedback Rápido: El pipeline se detiene y notifica al canal de Slack del equipo que el build está ROJO.</li>
+                                    <li>Prioridad Máxima: El desarrollador A detiene su trabajo y revierte o corrige el commit para restaurar el estado <br>
+                                        VERDE en minutos.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <form action="../../../examenes/examen_modulo_3/examen_modulo_3.php" method="post" onsubmit="return confirm('¿Estas listo para realizar el examen?');">
+                            <button class="botones" type="submit">Ir al examen</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+/*---------Color-al-fondo-de-body------------------rgba(3, 112, 145, 0.212),-#101916a4---------------*/
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, #191016a4, black), url(../../../../img/imagenes_de_fondo/fondo5_cafe.png);
+    background-position: center;
+}
+/*----------------------tamaño-de-lentras------------------------*/
+.titulo{
+    font-size: 2rem;
+}
+.subtitulo{
+    font-size: 1.25rem;
+}
+.texto{
+    font-size: 1.5rem;
+}
+.info_modulo{
+    font-size: 1rem;
+}
+/*--------------------------------------------------------*/
+header{
+    color: white;
+    padding: 15px;
+    display: flex;
+    background-color: #191016a4;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+header .logo h1{
+    margin: 0;
+    font-size: 24px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    display: flex;
+    gap: 10px;
+}
+nav ul li a{
+    text-align: none;
+    color: white;
+    font-size: bold;
+}
+/*--------------------------------------------------------*/
+.contenedor-bisabuelo{
+    justify-content: left;
+    width: 100%;
+}
+.contenedor-bipadre{
+    display: flex;
+    padding: 0rem;
+    justify-content: center;
+}
+.contenedor-bihijo{
+    text-align: left;
+    padding: 1rem;
+    justify-items: left;
+}
+/*--------------------------------------------------*/
+.panel-de-estudio{
+    padding: 10px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: #802b004f;
+    text-align: left;
+    transition-duration: 0.4s;  
+}
+.panel-de-estudio:hover{
+    padding: 15px;
+    box-shadow: 
+    inset 0 -1em 1em #8a3409a4,
+    0 0 0 1px white,
+    0.3em 0.3em 3em #46210f;
+}
+/*---------------------------------------------*/
+th{
+    background-color: #101916dc;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+th:hover{
+    padding: 15px;
+    box-shadow: 
+    inset 0 -1em 1em #8a3409a4,
+    0 0 0 1px white,
+    0.3em 0.3em 3em #46210f;
+}
+
+td{
+    background-color: #802b004f;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+td:hover{
+    padding: 15px;
+    box-shadow: 
+    inset 0 -1em 1em #8a3409a4,
+    0 0 0 1px white,
+    0.3em 0.3em 3em #46210f;
+}
+/*---------------------------------------------*/
+.botones{
+    background-color: #802b004f;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+    margin: 2px;
+}
+
+.botones:hover{
+    padding: 15px;
+    box-shadow: 
+    inset 0 -1em 1em #8a3409a4,
+    0 0 0 1px white,
+    0.3em 0.3em 3em #46210f;
+}
+/*-----------diseño-para-la-actividad-de unir-parejas------------*/
+.container{ 
+    color: black;
+    display: flex; 
+    justify-content: center; 
+    margin-top: 30px; 
+}
+
+.columna{
+    color: black;
+    margin: 10px;
+    padding: 20px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+/*------------------------------------------------*/
+.imagen{
+    width: 500px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.imagen_0{
+    width: 500px;
+    height: 350px;
+    border-radius: 15px;
+}

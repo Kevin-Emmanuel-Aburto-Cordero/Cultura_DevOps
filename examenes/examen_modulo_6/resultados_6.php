@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/img/icons/icons_leccion/Icon_Commission_Story.svg" type="image/x-icon">
     <link rel="stylesheet" href="../../assets/css/pages/modulos/modulo_6/resultados_6.css?v=1.0">
     <link rel="stylesheet" href="../../assets/fonts/font.css?v=1.0">
     <title>DevOps - Resultados del Examen 6</title>

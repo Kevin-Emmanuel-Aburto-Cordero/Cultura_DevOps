@@ -1,8 +1,13 @@
+/*En caso de fallo en una tabla, usar el siguiente bloque de codigo*/
+/*
+SET FOREIGN_KEY_CHECKS = 0; -- Deshabilita la comprobación
+drop table Respuestas; -- Nombre de la tabla
+truncate table Respuestas; -- Nombre de la tabla
+SET FOREIGN_KEY_CHECKS = 1;
+*/
 use test;
 select * from Respuestas;
-SET FOREIGN_KEY_CHECKS = 0; -- Deshabilita la comprobación
-truncate table Respuestas;
-SET FOREIGN_KEY_CHECKS = 1;
+
 INSERT INTO Respuestas (idPreguntas, texto_respuesta, es_correcta)
 VALUES
 -- Pregunta 1

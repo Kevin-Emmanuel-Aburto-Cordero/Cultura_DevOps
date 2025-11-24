@@ -1,8 +1,15 @@
-SELECT * FROM test.actividades;
-
+/*En caso de fallo en una tabla, usar el siguiente bloque de codigo*/
+/*
 SET FOREIGN_KEY_CHECKS = 0; -- Deshabilita la comprobación
-truncate table Actividades;
-SET FOREIGN_KEY_CHECKS = 1; --
+drop table Actividades; -- Nombre de la tabla
+truncate table Actividades; -- Nombre de la tabla
+SET FOREIGN_KEY_CHECKS = 1;
+*/
+
+/*SELECT Modulo.nombre_modulo, Modulo.idModulo, Actividades.idActividad, Actividades.titulo_actividad
+FROM actividades Actividades
+INNER JOIN modulo Modulo ON Actividades.idModulo = Modulo.idModulo;*/
+SELECT * FROM test.actividades;
 use test;
 
 drop table Actividades;
@@ -12,12 +19,6 @@ INSERT INTO Actividades (idModulo, titulo_actividad, tipo_actividad) VALUES (1, 
 INSERT INTO Actividades (idModulo, titulo_actividad, tipo_actividad) VALUES (1, 'Herramientas fundamentales', 'Lectura, Interactividad');
 INSERT INTO Actividades (idModulo, titulo_actividad, tipo_actividad) VALUES (1, 'Más allá del ciclo de vida: DevSecOps', 'Lectura, Interactiva');
 select * from Actividades;
-SELECT COUNT(*) AS completadas FROM Actividades_estudiante ae INNER JOIN Actividades a ON ae.idActividad = a.idActividad WHERE ae.idEstudiante = 23 AND a.idModulo = 1 AND ae.estado = 'completada';
-SELECT COUNT(*) AS total FROM Actividades WHERE idModulo = 1;
-
-SELECT Modulo.nombre_modulo, Modulo.idModulo, Actividades.idActividad, Actividades.titulo_actividad
-FROM actividades Actividades
-INNER JOIN modulo Modulo ON Actividades.idModulo = Modulo.idModulo;
 
 INSERT INTO Actividades (idModulo, titulo_actividad, tipo_actividad) 
 VALUES (2, 'Introducción a Git', 'Lectura, Interactiva'),

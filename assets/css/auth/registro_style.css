@@ -120,3 +120,13 @@ input, textarea{/*Le agrega tamaño de letra al ingresado*/
     bottom: 37px;
     right: -52%;
 }
+/*---------------------------------------------------------------*/
+.ubicar_texto{
+    text-align: center;
+    padding: 4px;
+}
+/*--------------------------------------------------------------*/
+a{
+    text-decoration: none;
+    color: white;
+}

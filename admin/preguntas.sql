@@ -1,6 +1,10 @@
+/*En caso de fallo en una tabla, usar el siguiente bloque de codigo*/
+/*
 SET FOREIGN_KEY_CHECKS = 0; -- Deshabilita la comprobación
-truncate table Preguntas;
-SET FOREIGN_KEY_CHECKS = 1; --
+drop table Preguntas; -- Nombre de la tabla
+truncate table Preguntas; -- Nombre de la tabla
+SET FOREIGN_KEY_CHECKS = 1;
+*/
 select * from Preguntas;
 use test;
 

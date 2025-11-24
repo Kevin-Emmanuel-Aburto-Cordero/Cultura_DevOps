@@ -7,7 +7,7 @@ contraseña varchar(200) not null,
 nombre_universidad varchar(200) not null,
 pais varchar(200) not null,
 estado varchar(200) not null,
-fecha_registro varchar(200) not null
+fecha_registro timestamp default current_timestamp
 );
 
 create table Modulo(
@@ -37,14 +37,13 @@ idActividad int not null,
 fecha_completada datetime default current_timestamp,
 estado enum('pendiente', 'completada') default 'completada',
 foreign key (idEstudiante) references Estudiante(idEstudiante),
-foreign key (idActividad) references Actividades(idActividad)
+foreign key (idActividad) references Actividades(idActividad),
+calificacion int default 0
 );
-alter table Actividades_estudiante add column calificacion int default 0;
+/*alter table Actividades_estudiante add column calificacion int default 0;
 truncate table Actividades_estudiante;
 select * from Actividades_estudiante;
-select calificacion FROM Actividades_estudiante;
-
-
+select calificacion FROM Actividades_estudiante;*/
 
 create table Examen(
 idExamen int not null primary key auto_increment,
@@ -71,20 +70,6 @@ es_correcta tinyint(1),
 foreign key (idPreguntas) references Preguntas (idPreguntas)
 );
 
-CREATE TABLE Examen_estudiante (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    idEstudiante INT NOT NULL,
-    idExamen INT NOT NULL,
-    calificacion INT NOT NULL,
-    fecha_realizado DATETIME DEFAULT CURRENT_TIMESTAMP,
-    intentos INT DEFAULT 1,
-    estado VARCHAR(20) DEFAULT 'completado',
-    FOREIGN KEY (idEstudiante) REFERENCES Estudiante(idEstudiante),
-    FOREIGN KEY (idExamen) REFERENCES Examen (idExamen)
-);
-select * from Examen_estudiante;
-
-
 CREATE TABLE Examenes_estudiante (
     idExamenes_estudiante INT AUTO_INCREMENT PRIMARY KEY,
     idEstudiante INT NOT NULL,
@@ -96,7 +81,6 @@ CREATE TABLE Examenes_estudiante (
     FOREIGN KEY (idEstudiante) REFERENCES Estudiante(idEstudiante),
     FOREIGN KEY (idExamen) REFERENCES Examen(idExamen)
 );
-select * from Examenes_estudiante;
 
 create table Progresos_modulo(
 idProgresos_modulo int not null primary key auto_increment,
@@ -107,10 +91,6 @@ fecha_desbloqueo datetime DEFAULT CURRENT_TIMESTAMP,
 UNIQUE (idEstudiante, idModulo),
 foreign key(idEstudiante) references Estudiante(idEstudiante)
 );
-SET FOREIGN_KEY_CHECKS = 0; -- Deshabilita la comprobación
-drop table Progresos_modulo;
-truncate table Progresos_modulo;
-SET FOREIGN_KEY_CHECKS = 1;
 
 select * from Progresos_modulo;
 describe Estudiante;
@@ -118,6 +98,17 @@ describe Modulo;
 describe Actividades;
 describe Actividades_estudiante;
 describe Examen;
+describe Preguntas;
+describe Respuestas;
+describe Examenes_estudiante;
+describe Progresos_modulo;
 show tables;
 use test;
-describe Modulo;
+
+/*En caso de fallo en una tabla, usar el siguiente bloque de codigo*/
+/*
+SET FOREIGN_KEY_CHECKS = 0; -- Deshabilita la comprobación
+drop table Progresos_modulo; -- Nombre de la tabla
+truncate table Progresos_modulo; -- Nombre de la tabla
+SET FOREIGN_KEY_CHECKS = 1;
+*/

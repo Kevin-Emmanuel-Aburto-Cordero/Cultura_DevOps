@@ -14,7 +14,8 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
     $pass2=$_POST['password2'] ?? '';
 
     if($pass1 !== $pass2 || strlen($pass1)<6){
-        echo "Contraseñas no coinciden o muy cortas"; 
+        //echo "Contraseñas no coinciden o muy cortas"; 
+        echo"<script> alert('Contraseñas no coinciden o muy cortas.'); window.location.href='../recupera_contraseña.html'; </script>";
         exit;
     }
 
@@ -34,11 +35,15 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
             echo "<a href='../../auth/login.html'>Iniciar Sesion</a>";*/
             header("Location: ../../auth/login.html");
         }else{
-            echo "Error al actualizar contraseña";
+            //echo "Error al actualizar contraseña";
+            echo "<script>alert('Error al actualizar contraseña.'); window.location.href='../recupera_contraseña.html';</script>";
+            exit;
         }
         $upd->close();
     }else{
-        echo "Usuario no encontrado";
+        //echo "Usuario no encontrado";
+        echo"<script> alert('Usuario no encontrado.'); window.location.href='../recupera_contraseña.html'; </script>";
+        exit;
     }
     $stmt->close();
     $conexion->close();

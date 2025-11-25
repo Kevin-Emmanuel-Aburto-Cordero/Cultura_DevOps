@@ -1,4 +1,4 @@
-document.getElementById("registro").addEventListener("submit", function(event){
+document.getElementById("registro").addEventListener("submit", function(event) {
     let mensajeError = document.getElementById("mensajeError");
 
     let usuario = document.getElementById("usuario").value.trim();
@@ -7,37 +7,48 @@ document.getElementById("registro").addEventListener("submit", function(event){
     let pais = document.getElementById("pais").value.trim();
     let estado = document.getElementById("estado").value.trim();
 
+    // Limpiar mensaje previo
+    mensajeError.textContent = "";
+
+    // Validar usuario
     if (usuario.length < 4) {
         event.preventDefault();
-        mensajeError.textContent = alert('El usuario debe tener al menos 4 caracteres.');
+        mensajeError.textContent = "El usuario debe tener al menos 4 caracteres.";
         return;
     }
 
-    if (contraseña === ""){
+    // Validar contraseña vacía
+    if (contraseña === "") {
         event.preventDefault();
-        mensajeError.textContent = alert('La contraseña es obligatoria');
+        mensajeError.textContent = "La contraseña es obligatoria.";
+        return;
     }
 
+    // Validar largo de contraseña
     if (contraseña.length < 6) {
         event.preventDefault();
-        mensajeError.textContent = alert('La contraseña debe tener al menos 6 caracteres.');
-        return;
-    }
-    if (nombre_universidad === "") {
-        event.preventDefault();
-        mensajeError.textContent = alert('La universidad es obligatoria.');
-        return;
-    }
-    if (pais === "") {
-        event.preventDefault();
-        mensajeError.textContent = alert('El país es obligatorio.');
-        return;
-    }
-    if (estado === "") {
-        event.preventDefault();
-        mensajeError.textContent = alert('El estado es obligatorio.');
+        mensajeError.textContent = "La contraseña debe tener al menos 6 caracteres.";
         return;
     }
 
-    mensajeError.textContent = "";
+    // Validar universidad
+    if (nombre_universidad === "") {
+        event.preventDefault();
+        mensajeError.textContent = "La universidad es obligatoria.";
+        return;
+    }
+
+    // Validar país
+    if (pais === "") {
+        event.preventDefault();
+        mensajeError.textContent = "El país es obligatorio.";
+        return;
+    }
+
+    // Validar estado
+    if (estado === "") {
+        event.preventDefault();
+        mensajeError.textContent = "El estado es obligatorio.";
+        return;
+    }
 });

@@ -14,24 +14,33 @@
             <div class="titulo">
                 <h1>Cultura<br>DevOps</h1>
             </div>
+
             <div class="texto">
-            <form id="recuperar_contraseña" action="scripts/recuperar_contraseña.php" method="post">
-                <label for="usuario">Usuario</label><br>
-                <input type="text" id="usuario" name="usuario" placeholder="Usuario"><br>
-                <label for="contraseña">Contraseña</label>
-                <input type="password" id="password" name="password" placeholder="Contraseña"><br>
-                <label for="Confirmar contraseña">Confirmar contraseña</label>
-                <input type="password" id="password2" name="password2" placeholder="Confirmar contraseña"><br>
+                <form id="recuperar_contraseña" action="scripts/recuperar_contraseña.php" method="post">
+
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" autocomplete="username">
+
+                    <label for="password">Nueva contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" autocomplete="new-password">
+
+                    <label for="password2">Confirmar contraseña</label>
+                    <input type="password" id="password2" name="password2" placeholder="Confirmar contraseña" autocomplete="new-password">
+
+                    <div class="ubicar_texto">
+                        <a href="../auth/login.html">Inicia sesión aquí</a>
+                    </div>
+
+                    <button type="submit">Cambiar Contraseña</button>
+                </form>
+
                 <div class="ubicar_texto">
-                    <a href="../auth/login.html">Inicia Sesion aqui</a><br>
+                    ¿No tienes cuenta? <a href="../auth/register.html">Regístrate</a>
                 </div>
-                <button type="submit">Cambiar Contraseña</button>
-            </form>
-            <div class="ubicar_texto">
-                ¿No tienes cuenta? <a href="../auth/login.html">Resgistrate</a>
-            </div>
-            <div id="mensajeError" style="color: white;"></div>
-            <script src="../assets/js/validar_cambio_contraseña.js?v=1.0"></script>
+
+                <div id="mensajeError" style="color: white;"></div>
+
+                <script src="../assets/js/validar_cambio_contraseña.js?v=1.0"></script>
             </div>
         </div>
     </div>

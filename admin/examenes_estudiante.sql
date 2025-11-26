@@ -7,3 +7,8 @@ SET FOREIGN_KEY_CHECKS = 1;
 */
 SELECT * FROM test.examenes_estudiante;
 use test;
+select * from examenes_estudiante where idEstudiante = 31;
+select * from examenes_estudiante where idEstudiante = 32;
+select * from examenes_estudiante where idEstudiante = 33;
+select * from examenes_estudiante where idEstudiante = 34;
+select * from examenes_estudiante where idEstudiante = 35;

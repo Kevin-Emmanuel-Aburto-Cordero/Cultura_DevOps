@@ -54,6 +54,7 @@
                 <button class="botones" type="submit">Editar Perfil</button>
             </form>
             <form action="scripts/eliminar_cuenta.php" method="POST" onsubmit="return confirm('¿Estas seguro de eliminar tu cuenta?');">
+                <input type="hidden" name="idEstudiante" value="<?php echo $_SESSION['idEstudiante']; ?>">
                 <button class="botones" type="submit" name="eliminar">Eliminar Cuenta</button>
             </form>
             <form action="../auth/logout.php" method="POST">

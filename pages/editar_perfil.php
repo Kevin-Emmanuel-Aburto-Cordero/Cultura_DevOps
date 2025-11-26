@@ -81,6 +81,7 @@
                 <button class="botones" name="actualizar" type="submit">Actualizar datos</button>
             </form>
             <form action="scripts/eliminar_cuenta.php" method="POST" onsubmit="return confirm('¿Estas seguro de eliminar tu cuenta?');">
+                <input type="hidden" name="idEstudiante" value="<?php echo $_SESSION['idEstudiante']; ?>">
                 <button class="botones" type="submit" name="eliminar">Eliminar Cuenta</button>
             </form>
         </div>

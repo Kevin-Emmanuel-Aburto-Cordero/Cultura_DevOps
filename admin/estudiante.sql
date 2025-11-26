@@ -6,3 +6,5 @@ truncate table estudiante; -- Nombre de la tabla
 SET FOREIGN_KEY_CHECKS = 1;
 */
 SELECT * FROM test.estudiante;
+
+DESCRIBE Actividades_Estudiante;

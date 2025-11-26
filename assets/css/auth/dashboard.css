@@ -61,12 +61,21 @@ nav ul li a{
     font-weight: bold;
 }
 /*----------------------------------------------*/
-.menu_usuario{
-    position: relative;
+.menu_usuario {
+    margin-left: auto;
     display: flex;
-    justify-content: right;
-    justify-items: right;
-    left: 66%;
+}
+
+@media (max-width: 1200px) {
+    .menu_usuario {
+        justify-content: center; /* lo manda al centro */
+    }
+}
+
+@media (max-width: 600px) {
+    .menu_usuario {
+        justify-content: flex-start; /* o a la izquierda */
+    }
 }
 /*----------------------------------------------*/
 .dropbtn {
@@ -167,7 +176,11 @@ nav ul li a{
     0.3em 0.3em 3em #154360;
 }
 /*----------------------------------------------*/
-
+.contenedor-modulos {
+    position: relative;
+    width: 100%;
+    height: 600px; /* ajusta según tu gusto */
+}
 /*----------------------------------------------*/
 .modulo1{
     width: 150px;
@@ -180,9 +193,6 @@ nav ul li a{
     justify-content: center;
     transition-duration: 0.4s;
     box-shadow: 0.3s ease-in-out;
-
-    position: relative;
-    left: 20%;
 }
 .modulo1:hover{
     padding: 15px;
@@ -208,10 +218,6 @@ nav ul li a{
     justify-content: center;
     transition-duration: 0.4s;
     box-shadow: 0.3s ease-in-out;
-
-    position: relative;
-    top: 10px;
-    left: 5%;
 }
 .modulo2:hover{
     padding: 15px;
@@ -236,10 +242,6 @@ nav ul li a{
     justify-content: center;
     transition-duration: 0.4s;
     box-shadow: 0.3s ease-in-out;
-
-    position: relative;
-    top: 20px;
-    left: 20%;
 }
 .modulo3:hover{
     padding: 15px;
@@ -392,6 +394,42 @@ nav ul li a{
     width: 100px;
     height: 100px;
 }
+
+.modulo1 { position: absolute; top: 0; left: 20%; transform: translateX(-10%); }
+.modulo2 { position: absolute; top: 10px; left: 5%; transform:  translate(-10% ,120%); }
+.modulo3 { position: absolute; top: 20px; left: 20%; transform: translate(-10%, 240%); }
+.modulo4 { position: absolute; top: 230px; left: 50%; transform: translate(-20%, 30%); }
+.modulo5 { position: absolute; top: 615px; left: 65%; transform: translate(0%, -400%);}
+.modulo6 { position: absolute; top: 605px; left: 80%; transform: translate(30%,-270%);}
+.modulo7 { position: absolute; top: 600px; left: 65%; transform: translate(5%, -130%); }
+.modulo8 { position: absolute; top: 250px; left: 50%; transform: translate(-145%, -50%); }
+
+/* Cuando la pantalla sea más pequeña de 874px */
+@media (max-width: 874px) {
+
+    .modulo1,
+    .modulo2,
+    .modulo3,
+    .modulo4,
+    .modulo5,
+    .modulo6,
+    .modulo7,
+    .modulo8 {
+        position: static;
+        transform: none;
+        margin: 20px auto; /* separacion vertical */
+    }
+
+    .contenedor-modulos {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        height: auto;
+    }
+}
+
 
 a{
     text-decoration: none;

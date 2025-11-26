@@ -38,10 +38,10 @@ $stmt->execute();
 $result = $stmt->get_result();
 
 if ($row = $result->fetch_assoc()) {
-    echo "<h2>Progreso del Módulo: {$row['nombre_modulo']}</h2>";
-    echo "<strong>Actividades completadas:</strong> {$row['actividades_completadas']} / {$row['total_actividades']}<br>";
-    echo "<strong>Estado del examen:</strong> {$row['estado_examen']}</br>";
-    echo "<strong>Estado general del módulo:</strong> {$row['estado_modulo']}<br>";
+    echo "<h3>Progreso del Módulo: {$row['nombre_modulo']}</h3>";
+    echo "Actividades completadas: {$row['actividades_completadas']} / {$row['total_actividades']}<br>";
+    echo "Estado del examen: {$row['estado_examen']}</br>";
+    echo "Estado general del módulo: {$row['estado_modulo']}<br>";
 } else {
     echo "⚠️ No se encontró información para este módulo.";
 }

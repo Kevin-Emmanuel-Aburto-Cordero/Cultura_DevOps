@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/icons/icons_leccion/pngegg.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/pages/editar_perfil.css?v=4.0">
+    <link rel="stylesheet" href="../assets/css/pages/editar_perfil.css?v=5.0">
     <link rel="stylesheet" href="../assets/fonts/font.css?v=1.0">
     <title>DevOps - Editar Cuenta</title>
 </head>

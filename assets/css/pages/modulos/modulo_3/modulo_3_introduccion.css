@@ -77,12 +77,21 @@ nav ul li a{
     font-weight: bold;
 }
 /*--------------------------------------------------*/
-.menu_usuario{
-    position: relative;
+.menu_usuario {
+    margin-left: auto;
     display: flex;
-    justify-content: right;
-    justify-items: right;
-    left: 77%;
+}
+
+@media (max-width: 1200px) {
+    .menu_usuario {
+        justify-content: center; /* lo manda al centro */
+    }
+}
+
+@media (max-width: 600px) {
+    .menu_usuario {
+        justify-content: flex-start; /* o a la izquierda */
+    }
 }
 /*--------------------------------------------------*/
 .dropbtn {

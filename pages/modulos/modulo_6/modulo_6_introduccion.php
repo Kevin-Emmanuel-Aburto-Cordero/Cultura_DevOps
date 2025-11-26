@@ -7,7 +7,7 @@ include("scripts_modulo_6/verificar_modulo.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../assets/img/icons/icons_leccion/Icon_Commission_Default.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../../../assets/css/pages/modulos/modulo_6/modulo_6_introduccion.css?=1.0">
+    <link rel="stylesheet" href="../../../assets/css/pages/modulos/modulo_6/modulo_6_introduccion.css?=2.0">
     <link rel="stylesheet" href="../../../assets/fonts/font.css?=1.0">
     <title>DevOps - Módulo 6</title>
 </head>

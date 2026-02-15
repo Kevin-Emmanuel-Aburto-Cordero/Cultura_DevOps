@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/img/icons/icons_leccion/Icon_Commission_Story.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../../assets/css/pages/modulos/modulo_5/panel_de_estudio_5.css?v=1.0">
+    <link rel="stylesheet" href="../../../assets/fonts/font.css?v=1.0">
+    <title>Panel de Estudio 5</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cultura <br> DevOps</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <form action="modulo_5_introduccion.php" method="POST">
+                        <button class="botones" type="submit">Introduccion Modulo 5</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor-bisabuelo">
+        <div class="contenedor-bipadre">
+            <div class="contenedor-bihijo">
+                <div class="panel-de-estudio">
+                    <div class="container">
+                            <div class="columna">
+                                Hola estudiante, antes de realizar el examen te proporcionamos un panel de estudios <br>
+                                en la cual esta basado en los temas vistos durante el modulo 5. Asi que tomate tu <br>
+                                tiempo y estudia, buena suerte!. <br>
+                                <h1 class="titulo">
+                                    Módulo 5: Infraestructura como Código (IaC)
+                                </h1>
+                                <h4 class="subtitulo">
+                                    1. Definiciones Centrales de IaC
+                                </h4>
+                                <table>
+                                    <tr>
+                                        <th>Concepto</th>
+                                        <th>Definición Breve</th>
+                                        <th>Lección <br> Relacionada</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Infraestructura como Código <br> (IaC)</td>
+                                        <td>Práctica de gestionar y aprovisionar recursos de <br> infraestructura (red, servidores, DBs) mediante archivos de <br> definición versionados (código).</td>
+                                        <td>5.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Desviación de Configuración <br> (Configuration Drift)</td>
+                                        <td>El riesgo de que los entornos dejen de ser idénticos <br> (inconsistentes) debido a cambios manuales no documentados.</td>
+                                        <td>5.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Modelo Declarativo</td>
+                                        <td>Enfoque de IaC donde se define el estado final deseado <br> ("el qué"). La herramienta calcula y aplica los pasos.</td>
+                                        <td>5.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Modelo Imperativo</td>
+                                        <td>Enfoque de IaC donde se define la secuencia exacta de <br> comandos que la herramienta debe ejecutar ("el cómo").</td>
+                                        <td>5.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Idempotencia</td>
+                                        <td>Propiedad de que una operación se puede ejecutar repetidamente <br> sin causar efectos nuevos o no deseados. Clave para la confiabilidad.</td>
+                                        <td>5.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Infraestructura Inmutable</td>
+                                        <td>Filosofía de que cualquier cambio requiere destruir el recurso <br> antiguo y recrear uno nuevo con la configuración actualizada, <br> eliminando el drift.</td>
+                                        <td>5.3</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <h4 class="subtitulo">
+                                    2. Flujo del Pipeline y Roles de Herramientas
+                                </h4>
+                                Este diagrama ilustra cómo el codigo de IaC se integra en el flujo CI/CD.
+                                <br>
+                                <table>
+                                    <tr>
+                                        <th>Lección</th>
+                                        <th>Etapa del Pipeline / <br> Proceso</th>
+                                        <th>Objetivo Principal (El Por <br> Qué)</th>
+                                        <th>Estrategia/Herramienta Clave</th>
+                                    </tr>
+                                    <tr>
+                                        <td>5.1 <br> Transformación</td>
+                                        <td>Control de <br> Versiones</td>
+                                        <td>Aplicar las prácticas de <br> desarrollo de software (Git, <br> PRs) a la infraestructura <br> para lograr trazabilidad y <br> auditabilidad.</td>
+                                        <td>Archivos de Definición, Pull <br> Requests (Revisión de <br> Código).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5.2 Modelos</td>
+                                        <td>Aprovisionamiento</td>
+                                        <td>Elegir el método de <br> comunicación con la <br> infraestructura: Declarativo <br> (estado) o Imperativo <br> (pasos).</td>
+                                        <td>Terraform (Declarativo), <br> Ansible (Imperativo).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5.3 <br> Idempotencia</td>
+                                        <td>Gestión de <br> Cambios</td>
+                                        <td>Garantizar que el pipeline <br> pueda repetirse sin <br> corromper la infraestructura <br> (Idempotencia) o que los <br> servidores permanezcan <br> inmaculados (Inmutabilidad).</td>
+                                        <td>Chequeo de Estado Actual vs. <br> Deseado.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5.4 <br> Herramientas</td>
+                                        <td>Función Específica</td>
+                                        <td>Usar la herramienta <br> adecuada para la tarea: <br> creación de recursos o <br> configuración interna.</td>
+                                        <td>Provisioning: Terraform, <br> CloudFormation. Config. <br> Management: Ansible, Chef.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5.5 Integración <br> CD</td>
+                                        <td>Flujo CI/CD de IaC</td>
+                                        <td>Permitir la creación, <br> modificación y destrucción <br> automatizada de entornos, <br> optimizando costos y <br> calidad.</td>
+                                        <td>terraform validate <br> (CI), terraform plan <br> (Revisión), terraform <br> apply (CD).</td>
+                                    </tr>
+                                </table>
+                                <h4 class="subtitulo">
+                                    3. Mecanismos Clave y Prácticas de IaC
+                                </h4>
+                                Esta tabla resume cómo los comandos y las técnicas de IaC se integran en el ciclo de vida de la <br>
+                                Entrega Continua.
+                                <table>
+                                    <tr>
+                                        <th>Mecanismo de IaC</th>
+                                        <th>Comando o Técnica</th>
+                                        <th>Función Crítica</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Validación Previa (CI)</td>
+                                        <td>terraform <br> validate</td>
+                                        <td>Verifica la sintaxis, el formato y las políticas del código de <br> infraestructura antes de tocar la nube real.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plan de Ejecución</td>
+                                        <td>terraform plan</td>
+                                        <td>Genera un informe detallado que muestra exactamente <br> qué recursos se crearán, modificarán o destruirán. <br> Actúa como la base para la aprobación manual (Manual <br> Gate).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aprovisionamiento <br> Multi-Nube</td>
+                                        <td>Terraform</td>
+                                        <td>Se utiliza para crear recursos de alto nivel (VMs, redes, <br> balanceadores) en cualquier proveedor de nube, a través <br> de su lenguaje declarativo HCL.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Configuración Post- <br> Aprovisionamiento</td>
+                                        <td>Ansible</td>
+                                        <td>Se usa para instalar y configurar software y archivos <br> dentro de las VMs que fueron creadas por Terraform.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Entornos Desechables</td>
+                                        <td>terraform destroy</td>
+                                        <td>Permite crear entornos completos de Staging para una <br> prueba E2E (Módulo 4.3) y luego eliminarlos por <br> completo para reducir los costos de infraestructura.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <form action="../../../examenes/examen_modulo_5/examen_modulo_5.php" method="post" onsubmit="return confirm('¿Estas listo para realizar el examen?');">
+                            <button class="botones" type="submit">Ir al examen</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

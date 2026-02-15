@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/img/icons/icons_leccion/Icon_Commission_Story.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../../assets/css/pages/modulos/modulo_2/panel_de_estudio_2.css?v=4.0">
+    <link rel="stylesheet" href="../../../assets/fonts/font.css?v=0.0">
+    <title>DevOps - Panel de Estudio 2</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cultura <br> DevOps</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <form action="modulo_2_introduccion.php" method="POST">
+                        <button class="botones" type="submit">Introduccion Modulo 2</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor-bisabuelo">
+        <div class="contenedor-bipadre">
+            <div class="contenedor-bihijo">
+                <div class="panel-de-estudio">
+                    <div class="container">
+                    <div class="columna">
+                    Hola estudiante, antes de realizar el examen te proporcionamos un panel de estudios <br>
+                        en la cual esta basado en los temas vistos durante el modulo 2. Asi que tomate tu <br>
+                        tiempo y estudia, buena suerte!.
+                        <h3>Leccion: Introduccion a Git</h3>
+                        <b>Concepto general: </b>
+                        Git es un sistema de control de versiones distribuido que permite registrar, organizar y gestionar los <br>
+                        cambios en un proyecto de software. Es una herramienta esencial para el desarrollo colaborativo, ya que <br>
+                        permite a varios programadores trabajar en el mismo código sin interferir entre sí. <br>
+
+                        <br>
+                        <b>Importancia:</b>
+                        Git facilita volver a versiones anteriores, crear puntos de control (commits), trabajar en distintas <br>
+                        funcionalidades al mismo tiempo (ramas) y mantener la estabilidad del proyecto principal. <br>
+
+                        <br>
+                        <b>Conceptos clave:</b>
+                        <ul>
+                            <li>Repositorio: Carpeta donde Git almacena el proyecto y su historial de cambios.</li>
+                            <li>Commit: Registro o punto de guardado con los cambios realizados.</li>
+                            <li>Branch (rama): Línea de desarrollo paralela para trabajar en nuevas funciones.</li>
+                            <li>Merge: Fusión de ramas para integrar cambios.</li>
+                            <li>Clone: Copia de un repositorio remoto en tu máquina.</li>
+                        </ul>
+
+                        <br>
+                        <b>Ejemplo básico: </b>
+                        <br>
+                        git init <br>
+                        git add . <br>
+                        git commit -m "Primer commit del proyecto" <br>
+                        git log <br>
+
+                        <h3>Lección 2: Flujo de trabajo con ramas (Branching y Merging)</h3>
+                        <b>Concepto general:</b>
+                        <br>
+                        Las ramas permiten crear líneas de desarrollo independientes dentro de un mismo proyecto. Así, los <br>
+                        desarrolladores pueden trabajar en nuevas características, probar ideas o corregir errores sin alterar el <br>
+                        código principal. <br>
+                        El proceso de merging consiste en integrar los cambios de una rama en otra, generalmente de una rama <br>
+                        secundaria hacia la rama principal (main o master). <br>
+
+                        <br>
+                        <b>Importancia: </b>
+                        <br>
+                        El uso de ramas evita conflictos, mejora la organización y permite desarrollar nuevas funciones de manera <br>
+                        segura. <br>
+                        <br>
+
+                        <b>Conceptos clave:</b>
+                        <br>
+                        <ul>
+                            <li>main/master: Rama principal y estable del proyecto.</li>
+                            <li>feature branch: Rama temporal para desarrollar una nueva función.</li>
+                            <li>merge conflict: Ocurre cuando dos ramas modifican la misma parte del código.</li>
+                            <li>merge: Acción de unir los cambios de una rama con otra.</li>
+                        </ul>
+                        <br>
+
+                        <b>Ejemplo práctico:</b>
+                        <br>
+                        <ul>
+                            <li>git branch nueva-funcion</li>
+                            <li>git checkout nueva-funcion</li>
+                            # Se realizan los cambios<br>
+                            <li>git checkout main</li>
+                            <li>git merge nueva-funcion</li>
+                        </ul>
+
+                        <h3>Lección 3: Repositorios remotos (GitHub, GitLab, Bitbucket)</h3>
+                        <b>Concepto general:</b>
+                        <br>
+                        Un repositorio remoto es una copia del proyecto almacenada en la nube. Permite sincronizar, compartir y <br>
+                        colaborar con otros desarrolladores. <br>
+                        Las plataformas más utilizadas son GitHub, GitLab y Bitbucket, que además de almacenar el código, <br>
+                        integran herramientas de trabajo en equipo, revisión de código y automatización (CI/CD). <br>
+                        <br>
+
+                        <b>Importancia: </b>
+                        Los repositorios remotos aseguran que el código esté disponible desde cualquier lugar, actúan como <br>
+                        respaldo y facilitan el trabajo colaborativo. <br>
+                        <br>
+
+                        <b>Conceptos clave:</b>
+                        <ul>
+                            <li>GitHub: Plataforma más popular para proyectos de código abierto.</li>
+                            <li>GitLab: Ideal para entornos DevOps e integración continua.</li>
+                            <li>Bitbucket: Integración nativa con Jira y herramientas Atlassian.</li>
+                            <li>origin: Nombre que Git asigna al repositorio remoto principal.</li>
+                        </ul>
+
+                        <b>Ejemplo práctico:</b>
+                        <br>
+                        <ul>
+                            <li>git remote add origin https://github.com/usuario/proyecto.git</li>
+                            <li>git push -u origin main</li>
+                            <li>git pull origin main</li>
+                        </ul>
+
+                        <h3>Lección 4: Buenas prácticas en commits y control de cambios</h3>
+                        <b>Concepto general:</b>
+                        <br>
+                        Cada commit debe representar un cambio lógico y claro dentro del proyecto. Los commits bien escritos <br>
+                        y organizados permiten entender la evolución del código y resolver errores con facilidad. <br>
+                        Hacer commits pequeños y frecuentes evita confusiones y facilita la revisión. <br>
+                        <br>
+
+                        <b>Importancia:</b>
+                        <br>
+                        Un buen control de cambios mejora la trazabilidad del proyecto, mantiene el código ordenado y permite <br>
+                        trabajar en equipo de manera eficiente. <br>
+                        <br>
+                        <br>
+                        <b>Buenas prácticas:</b>
+                        <ul>
+                            <li>Realiza commits claros, pequeños y con propósito.</li>
+                            <li>Escribe mensajes que expliquen el cambio de forma breve.</li>
+                            <li>Usa prefijos descriptivos:</li>
+                            <ul>
+                                <li>feat: para nuevas funciones</li>
+                                <li>fix: para correcciones</li>
+                                <li>refactor: para reestructurar código</li>
+                            </ul>
+                            <li>Revisa tus cambios antes de confirmar.</li>
+                        </ul>
+
+                        <b>Ejemplo de commit bien escrito:</b>
+                        <ul>
+                            <li>git add app.js</li>
+                            <li>git commit -m "fix: corrige validación del formulario de registro"</li>
+                        </ul>
+
+                        <h3>Lección 5: Revisiones de código y Pull Requests</h3>
+                        <b>Concepto general:</b>
+                        <br>
+                        Una pull request (PR) es una solicitud para fusionar cambios de una rama en otra, normalmente de una rama <br>
+                        de desarrollo hacia main. <br>
+                        Antes de que los cambios se integren, otros miembros del equipo revisan el código (code review), comentan, <br>
+                        sugieren mejoras o aprueban la fusión. <br>
+                        <br>
+
+                        <b>Importancia:</b>
+                        <br>
+                        El proceso de revisión mejora la calidad del código, detecta errores antes de que lleguen a producción y <br>
+                        fomenta el aprendizaje entre los miembros del equipo. <br>
+                        <br>
+
+                        <b>Conceptos clave:</b>
+                        <ul>
+                            <li>Pull Request: Solicitud de integración de cambios.</li>
+                            <li>Reviewer: Persona encargada de revisar y aprobar los cambios.</li>
+                            <li>Merge: Integración final de los cambios al proyecto principal.</li>
+                            <li>Comentarios: Sugerencias o correcciones antes de aprobar.</li>
+                        </ul>
+
+                        <b>Ejemplo del flujo de trabajo:</b>
+                        <br>
+                        <ol>
+                            <li>Crea una nueva rama.</li>
+                            <li>Realiza tus commits y súbelos con git push.</li>
+                            <li>Crea una Pull Request en GitHub o GitLab.</li>
+                            <li>Espera la revisión del equipo.</li>
+                            <li>Fusiona la PR una vez aprobada.</li>
+                        </ol>
+                        
+                        <h3>Lección 6: Colaboración entre equipos con Git</h3>
+                        <b>Concepto general:</b>
+                        <br>
+                        Git facilita el trabajo en equipo al permitir que varios desarrolladores trabajen de forma simultánea en el <br>
+                        mismo proyecto. Cada miembro puede descargar el repositorio, realizar sus cambios localmente y luego <br>
+                        sincronizarlos con el repositorio remoto. <br>
+                        <br>
+                        La comunicación constante y el uso de ramas organizadas son esenciales para evitar conflictos y mantener la <br>
+                        estabilidad del código. <br>
+                        <br>
+
+                        <b>Importancia:</b>
+                        <br>
+                        La colaboración con Git promueve la eficiencia, la transparencia y el orden dentro de los equipos de <br>
+                        desarrollo. <br>
+                        <br>
+
+                        <b>Conceptos clave:</b>
+                        <br>
+                        <ul>
+                            <li>clone: Crea una copia del repositorio remoto en tu máquina.</li>
+                            <li>fetch: Obtiene actualizaciones del remoto sin integrarlas todavía.</li>
+                            <li>pull: Descarga e integra los cambios del remoto.</li>
+                            <li>push: Envía tus cambios al repositorio remoto.</li>
+                        </ul>
+
+                        <b>Ejemplo práctico:</b>
+                        git clone https://github.com/equipo/proyecto.git <br>
+                        git pull origin main <br>
+                        git push origin rama-personal <br>
+                        <br>
+
+                        <b>Buenas prácticas de equipo:</b>
+                        <br>
+                        <ul>
+                            <li>Actualiza tu repositorio antes de trabajar (git pull).</li>
+                            <li>Crea ramas por tarea o módulo.</li>
+                            <li>Comunica tus cambios antes de realizar merge.</li>
+                            <li>Revisa y limpia ramas antiguas regularmente.</li>
+                        </ul>
+
+                        <h3>Resumen Global</h3>
+                        <table>
+                            <tr>
+                                <th>Tema</th>
+                                <th>Concepto centrar</th>
+                                <th>Comando esencial</th>
+                                <th>Propósito</th>
+                            </tr>
+                            <tr>
+                                <td>Introduccion a GIT </td>
+                                <td>Sistema de control <br>
+                                    de versiones</td>
+                                <td>git init, git commit</td>
+                                <td>Gestionar versiones <br>
+                                del proyecto</td>
+                            </tr>
+                            <tr>
+                                <td>Ramas y funciones</td>
+                                <td>Trabajo en paralelo</td>
+                                <td>git branch, git merge</td>
+                                <td>Aislar y combinar cambios</td>
+                            </tr>
+                            <tr>
+                                <td>Repositorios remotos</td>
+                                <td>Colaboración en la nube</td>
+                                <td>git push, git pull</td>
+                                <td>Compartir y respaldar código</td>
+                            </tr>
+                            <tr>
+                                <td>Commits y control <br>
+                                de cambios</td>
+                                <td>historial limpio y claro</td>
+                                <td>git add, git commit</td>
+                                <td>Documentar cambios <br>
+                                significativos</td>
+                            </tr>
+                            <tr>
+                                <td>Pull Requests</td>
+                                <td>Revisión de código <br>
+                                colaborativo</td>
+                                <td>git push + PR en GitHub</td>
+                                <td>Garantizar calidad y revisión</td>
+                            </tr>
+                            <tr>
+                                <td>Colaboración en equipo</td>
+                                <td>Trabajo coordinado</td>
+                                <td>git clone, git pull</td>
+                                <td>sincronizar cambios entre <br>
+                                miembros</td>
+                            </tr>
+                        </table>
+                    </div></div>
+                    <form action="../../../examenes/examen_modulo_2/examen_modulo_2.php" method="post" onsubmit="return confirm('¿Estas listo para realizar el examen?');">
+                        <button class="botones" type="submit">Ir al examen</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

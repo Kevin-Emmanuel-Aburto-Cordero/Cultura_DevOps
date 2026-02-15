@@ -9,7 +9,11 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 }
 
 $usuario = trim($_POST['usuario'] ?? '');
+<<<<<<< HEAD
 $contrasena = trim($_POST['contrasena'] ?? '');
+=======
+$contraseña = trim($_POST['contraseña'] ?? '');
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
 $universidad = trim($_POST['nombre_universidad'] ?? '');
 $pais = trim($_POST['pais'] ?? '');
 $estado = trim($_POST['estado'] ?? '');
@@ -20,7 +24,11 @@ if ($usuario == "" || strlen($usuario) < 4) {
     exit;
 }
 
+<<<<<<< HEAD
 if ($contrasena == "" || strlen($contrasena) < 6) {
+=======
+if ($contraseña == "" || strlen($contraseña) < 6) {
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
     echo "<script>alert('Error: La contraseña debe tener al menos 6 caracteres.'); window.location.href='register.html';</script>";
     exit;
 }
@@ -31,7 +39,11 @@ if ($universidad == "" || $pais == "" || $estado == "") {
 }
 
 // Verificar si el usuario ya existe
+<<<<<<< HEAD
 $query = "SELECT * FROM Estudiante WHERE usuario = ?";
+=======
+$query = "SELECT * FROM estudiante WHERE usuario = ?";
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
 $stmt = $conn->prepare($query);
 $stmt->bind_param("s", $usuario);
 $stmt->execute();
@@ -43,12 +55,21 @@ if ($result->num_rows > 0) {
 }
 
 // Encriptar contraseña
+<<<<<<< HEAD
 $contrasena_hash = password_hash($contrasena, PASSWORD_DEFAULT);
 
 // Insertar usuario
 $insert = "INSERT INTO Estudiante (usuario, contrasena, nombre_universidad, pais, estado) VALUES (?, ?, ?, ?, ?)";
 $stmt2 = $conn->prepare($insert);
 $stmt2->bind_param("sssss", $usuario, $contrasena_hash, $universidad, $pais, $estado);
+=======
+$contraseña_hash = password_hash($contraseña, PASSWORD_DEFAULT);
+
+// Insertar usuario
+$insert = "INSERT INTO estudiante (usuario, contraseña, nombre_universidad, pais, estado) VALUES (?, ?, ?, ?, ?)";
+$stmt2 = $conn->prepare($insert);
+$stmt2->bind_param("sssss", $usuario, $contraseña_hash, $universidad, $pais, $estado);
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
 
 if ($stmt2->execute()) {
     header("Location: login.html?registro=exitoso");

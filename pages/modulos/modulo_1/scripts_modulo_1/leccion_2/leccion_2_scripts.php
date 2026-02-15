@@ -17,8 +17,13 @@ $sql = "SELECT
             a.titulo_actividad,
             ae.estado,
             ae.calificacion
+<<<<<<< HEAD
         FROM Actividades a
         INNER JOIN Modulo m ON a.idModulo = m.idModulo
+=======
+        FROM actividades a
+        INNER JOIN modulo m ON a.idModulo = m.idModulo
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
         LEFT JOIN Actividades_estudiante ae 
             ON a.idActividad = ae.idActividad AND ae.idEstudiante = ?
         WHERE a.idActividad = 2";

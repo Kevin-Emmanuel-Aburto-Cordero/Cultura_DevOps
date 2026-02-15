@@ -59,8 +59,11 @@ body{/*Dedicado para body*/
 
 .formulario:hover{/*Le agrega animacion al formulario*/
     padding: 25px;
+<<<<<<< HEAD
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+=======
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
     animation: parpadeo 3s infinite;
 }
 /* --------------------------------------------------------------- */
@@ -96,11 +99,17 @@ input, textarea{/*Le agrega tamaño de letra al ingresado*/
     background-color: rgba(3, 112, 145, 0.212);
     border: none;
     color: white;
+<<<<<<< HEAD
     padding: 15px 30px;
+=======
+    padding: 10px 22px;
+    border-radius: 10px;
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
     font-size: 15px;
     transition-duration: 0.4s;
     box-shadow: 0.3s ease-in-out;
     width: 150px;
+<<<<<<< HEAD
     clip-path: polygon(
     0% 100%, 85% 100%, 100% 50%, 100% 0%, 15% 0%, 0% 50%
   );
@@ -111,11 +120,18 @@ input, textarea{/*Le agrega tamaño de letra al ingresado*/
   border: 2px solid white;
   backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+=======
+}
+
+.boton:hover{/*Le agrega animacion a los botones*/
+  padding: 15px;
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
   box-shadow: 
   inset 0 -1em 1em #2874A6,
     0 0 0 1px rgb(255, 255, 255),
     0.3em 0.3em 3em #154360;
 }
+<<<<<<< HEAD
 
 /*-----------------------------------------------------------------*/
 .botones{
@@ -124,11 +140,14 @@ input, textarea{/*Le agrega tamaño de letra al ingresado*/
   justify-content: center;
   margin-top: 20px;
 }
+=======
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
 /* --------------------------------------------------------------- */
 .ubicar_texto{
     text-align: center;
 }
 /* --------------------------------------------------------------- */
+<<<<<<< HEAD
 /* .login{
     /* position: relative; */
     /* position: absolute;
@@ -136,6 +155,14 @@ input, textarea{/*Le agrega tamaño de letra al ingresado*/
     /* bottom: 37px;
     right: -52%;
 } */
+=======
+.login{
+    /* position: relative; */
+    position: relative;
+    bottom: 37px;
+    right: -52%;
+}
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
 /*---------------------------------------------------------------*/
 .ubicar_texto{
     text-align: center;

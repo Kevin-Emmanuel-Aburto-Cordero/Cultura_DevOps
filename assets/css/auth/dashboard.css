@@ -80,16 +80,25 @@ nav ul li a{
 /*----------------------------------------------*/
 .dropbtn {
     background-color: rgba(3, 112, 145, 0.212);
+<<<<<<< HEAD
     border: none;
     color: white;
     padding: 10px 10px;
+=======
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
     font-size: 15px;
     transition-duration: 0.4s;
     box-shadow: 0.3s ease-in-out;
     cursor: pointer;
+<<<<<<< HEAD
     clip-path: polygon(
     0% 100%, 85% 100%, 100% 50%, 100% 0%, 15% 0%, 0% 50%
   );
+=======
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
 }
 
 .dropdown {
@@ -101,10 +110,17 @@ nav ul li a{
     color: white;
     border-radius: 10px;
     font-size: 15px;
+<<<<<<< HEAD
     width: 125px;
     display: none;
     position: absolute;
     min-width: 125px;
+=======
+    width: 140px;
+    display: none;
+    position: absolute;
+    min-width: 140px;
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -115,12 +131,17 @@ nav ul li a{
   text-decoration: none;
   display: block;
   transition-duration: 0.4s;
+<<<<<<< HEAD
   box-shadow: 0.3s ease-in-out;
+=======
+    box-shadow: 0.3s ease-in-out;
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
 }
 
 .dropdown-content a:hover {
     background-color: rgba(3, 112, 145, 0.212);
     color: white;
+<<<<<<< HEAD
     font-size: 15px;
     width: 100px;
     transition-duration: 0.4s;
@@ -132,6 +153,14 @@ nav ul li a{
     border: 2px solid white;
   backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+=======
+    border-radius: 10px;
+    font-size: 15px;
+    width: 120px;
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+    text-align: center;
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
 }
 
 .dropdown:hover .dropdown-content {
@@ -140,16 +169,23 @@ nav ul li a{
 
 .dropdown:hover .dropbtn {
   padding: 15px;
+<<<<<<< HEAD
   border: 2px solid white;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+=======
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
     box-shadow: 
     inset 0 -1em 1em #2874A6,
     0 0 0 1px rgb(255, 255, 255),
     0.3em 0.3em 3em #154360;
 }
 /*----------------------------------------------*/
+<<<<<<< HEAD
 /* .botones{
+=======
+.botones{
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
     background-color: rgba(3, 112, 145, 0.212);
     border: none;
     color: white;
@@ -167,6 +203,7 @@ nav ul li a{
     inset 0 -1em 1em #2874A6,
     0 0 0 1px rgb(255, 255, 255),
     0.3em 0.3em 3em #154360;
+<<<<<<< HEAD
 } */
 /*----------------------------------------------*/
 .botones-cabecera{
@@ -182,13 +219,28 @@ nav ul li a{
     0% 100%, 85% 100%, 100% 50%, 100% 0%, 15% 0%, 0% 50%
   );
 
+=======
+}
+/*----------------------------------------------*/
+.botones-cabecera{
+    background-color: rgba(3, 112, 145, 0.212);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    box-shadow: 0.3s ease-in-out;
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
 }
 
 .botones-cabecera:hover{
     padding: 15px;
+<<<<<<< HEAD
     border: 2px solid white;
   backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+=======
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
     box-shadow: 
     inset 0 -1em 1em #2874A6,
     0 0 0 1px rgb(255, 255, 255),

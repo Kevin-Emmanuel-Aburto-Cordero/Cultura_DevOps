@@ -47,7 +47,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
     // Actualizar contraseña
+<<<<<<< HEAD
     $update = $conn->prepare("UPDATE Estudiante SET contrasena = ? WHERE idEstudiante = ?");
+=======
+    $update = $conn->prepare("UPDATE Estudiante SET contraseña = ? WHERE idEstudiante = ?");
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
     $update->bind_param("si", $password_hash, $idEstudiante);
 
     if ($update->execute()) {

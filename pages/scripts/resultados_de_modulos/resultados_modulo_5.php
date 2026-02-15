@@ -23,11 +23,19 @@ $sql = "SELECT
                 WHEN e.estado = 'reprobado' THEN '⛔ Examen reprobado'
                 ELSE '🕓 En progreso'
             END AS estado_modulo
+<<<<<<< HEAD
         FROM Modulo m
         LEFT JOIN Actividades a ON m.idModulo = a.idModulo
         LEFT JOIN Actividades_estudiante ae 
                ON a.idActividad = ae.idActividad AND ae.idEstudiante = ?
         LEFT JOIN Examenes_estudiante e 
+=======
+        FROM modulo m
+        LEFT JOIN actividades a ON m.idModulo = a.idModulo
+        LEFT JOIN actividades_estudiante ae 
+               ON a.idActividad = ae.idActividad AND ae.idEstudiante = ?
+        LEFT JOIN examenes_estudiante e 
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
                ON e.idExamen = m.idModulo AND e.idEstudiante = ?
         WHERE m.idModulo = ?
         GROUP BY m.idModulo, m.nombre_modulo, e.estado";

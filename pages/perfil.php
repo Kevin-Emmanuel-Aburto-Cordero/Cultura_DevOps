@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/icons/icons_leccion/pngegg.svg" type="image/x-icon">
+<<<<<<< HEAD
     <link rel="stylesheet" href="../assets/css/pages/perfil.css?v=9.0">
+=======
+    <link rel="stylesheet" href="../assets/css/pages/perfil.css?v=8.0">
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
     <link rel="stylesheet" href="../assets/fonts/font.css?v=3.0">
     <title>DevOps - Mi Cuenta</title>
 </head>

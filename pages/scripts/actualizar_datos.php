@@ -62,6 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $stmt->bind_param($tipos, ...$valores);
 
+<<<<<<< HEAD
    if ($stmt->execute()) {
 
     // 🔥 ACTUALIZAR LA SESIÓN con los valores nuevos
@@ -83,6 +84,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     echo "<script>alert('Error al actualizar: " . $stmt->error . "'); window.location.href='../editar_perfil.php';</script>";
 }
 
+=======
+    if ($stmt->execute()) {
+        echo "<script>alert('Datos actualizados correctamente.'); window.location.href='../editar_perfil.php';</script>";
+    } else {
+        echo "<script>alert('Error al actualizar: " . $stmt->error . "'); window.location.href='../editar_perfil.php';</script>";
+    }
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
 
     $stmt->close();
     $conn->close();

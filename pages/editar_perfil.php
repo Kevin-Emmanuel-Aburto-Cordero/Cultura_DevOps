@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/icons/icons_leccion/pngegg.svg" type="image/x-icon">
+<<<<<<< HEAD
     <link rel="stylesheet" href="../assets/css/pages/editar_perfil.css?v=6.0">
+=======
+    <link rel="stylesheet" href="../assets/css/pages/editar_perfil.css?v=5.0">
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
     <link rel="stylesheet" href="../assets/fonts/font.css?v=1.0">
     <title>DevOps - Editar Cuenta</title>
 </head>
@@ -52,10 +56,17 @@
             </form>
             Contraseña:
             <form action="scripts/cambiar_contraseña.php" method="POST">
+<<<<<<< HEAD
                 <input type="hidden" name="idEstudiante" value="<?php echo htmlspecialchars($_SESSION['idEstudiante'] ?? ''); ?>">
                 <input type="password" id="nueva_contrasena" name="nueva_contrasena" placeholder="********" required>
                 <br>
                 <button class="botones" name="cambiar_contrasena" type="submit">Cambiar contraseña</button>
+=======
+                <input type="hidden" name="usuario" value="<?php echo $_SESSION['usuario']; ?>">
+                <input type="password" id="nueva_contraseña" name="nueva_contraseña" placeholder="********" required>
+                <br>
+                <button class="botones" name="cambiar_contraseña" type="submit">Cambiar contraseña</button>
+>>>>>>> b2ed7e5fafd6695e7b3194bdd5228af52a673afc
             </form>
             <form action="perfil.php">
                 <button class="botones" type="submit">Mi cuenta</button>
